@@ -4,10 +4,10 @@ $purple: #301e79;
 $gray: #706f6f;
 $white: #ffffff;
 $red: #ff6471;
-$bg-sabiduria: rgba(50, 30, 113, 0.85);
-$bg-conocimiento: rgba(238, 22, 98, 0.85);
-$bg-metrica: rgba(37, 64, 222, 0.88);
-$bg-tecnologia: rgba(210, 42, 29, 0.85);
+$bg-sabiduria: rgba(50, 30, 113, 0.90);
+$bg-conocimiento: rgba(238, 22, 98, 0.90);
+$bg-metrica: rgba(37, 64, 222, 0.90);
+$bg-tecnologia: rgba(210, 42, 29, 0.90);
 
 // FONT
 
@@ -23,7 +23,7 @@ $bg-tecnologia: rgba(210, 42, 29, 0.85);
 
 $fontSliderTitle: "forest_line.ttf";
 $fontTitle: "Source Sans Pro", sans-serif;
-$fontParagraph: "Source Code Pro", monospace;
+$fontParagraph: "Source Sans Pro", sans-serif;
 $fontNavbar: "Gotham-Black";
 
 // COLORS
@@ -56,6 +56,20 @@ $fontNavbar: "Gotham-Black";
     transition-timing-function: cubic-bezier(0.8, 0.14, 0.94, 0.81);
     transition-timing-function: cubic-bezier(1, 0.01, 0.39, 1);
 
+    .swiper-slide.animate-up .content-left {
+      transform: translateY(800px);
+    }
+    
+    .swiper-slide.animate-down .content-left {
+      transform: translateY(-800px);
+    }
+    
+    .swiper-slide.transitioned .content-left {
+      opacity: 1 !important;
+      transform: translateY(0px);
+      transition: all 0.1s 0.01s ease;
+    }
+
     .swiper-slide {
       background: #fff;
       display: -webkit-box;
@@ -79,24 +93,25 @@ $fontNavbar: "Gotham-Black";
         height: 100%;
 
         .content-left {
-          padding: 10em 4em 0;
+          -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+          padding: 0 2.5em;
+          -webkit-transition:all 0.3s linear;
+          -moz-transition:all 0.3s linear;
+          -o-transition:all 0.3s linear;
+          -ms-transition:all 0.3s linear;    
+          transition:all 0.3s linear;
+          opacity: 0;
 
           h3 {
             color: $purple;
             font-family: $fontTitle;
-            font-weight: 700;
-            font-size: 3em;
+            font-weight: 900;
+            font-size: 3.5em;
             letter-spacing: -0.01em;
-            line-height: 1.2em;
-          }
-
-          p {
-            color: $gray;
-            font-family: $fontParagraph;
-            max-width: 400px;
-            line-height: 1.3em;
-            font-size: 1em;
-            margin: 2em 0;
+            line-height: 1.15em;
+            padding: 80px 0 .5em;
           }
 
           a {
@@ -119,7 +134,7 @@ $fontNavbar: "Gotham-Black";
           position: relative;
 
           .title {
-            padding: .8em .8em .5em;
+            padding: .9em .8em .5em;
             display: inline-block;
             position: absolute;
             left: 50%;
@@ -130,7 +145,7 @@ $fontNavbar: "Gotham-Black";
             h2 {
               color: $white;
               font-family: $fontSliderTitle;
-              font-size: 4em;
+              font-size: 4.5em;
             }
           }
         }

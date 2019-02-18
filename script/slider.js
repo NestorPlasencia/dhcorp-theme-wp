@@ -9,7 +9,7 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
-    speed: 900,
+    speed: 500,
     //loop: true,
     on: {
       init: function(){
@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper-container', {
   });
   
   var previous = swiper.activeIndex;
-  
+
   swiper.on('slideNextTransitionStart', function() {
     $('.transitioned').addClass('animate-up')
     $('.swiper-slide').removeClass('transitioned');
