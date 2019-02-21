@@ -95,3 +95,92 @@ section#contact {
         }
     }
 }
+
+section#quienes-somos {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        
+        h2 {
+            color: $purple;
+            font-weight: 900;
+            font-size: 3em;
+            letter-spacing: -0.01em;
+        }
+            
+        .content {
+            padding: 140px 3.5em 70px;
+
+            .description {
+                color: $gray-dark;
+                font-size: 20px;
+                line-height: 1.5em;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+
+            .case {
+                color: $gray-dark;
+                font-size: 14px;
+                line-height: 1.5em;
+                max-width: 65%;
+            }
+        }
+
+        .collage {
+            background-image: url("../assets/images/background/collage.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .fundador-title {
+            align-self: center;
+
+            h2 {
+                max-width: 400px;
+                margin-left: 1.2em;
+            }
+        }
+
+        .fundador-description {
+            text-align: center;
+            position: relative;
+            margin: 6em 0;
+
+            h4 {
+                padding: 6px 25px;
+                background-color: $purple-light;
+                color: $white;
+                border-radius: 20px;
+                font-size: 22px;
+                margin: -18px auto 20px;
+                width: 170px;
+            }
+
+            img {
+                max-width: 82%;
+            }
+
+            p {
+                max-width: 65%;
+                margin: 20px auto;
+                font-size: 14px;
+                color: $gray;
+                line-height: 1.5em;
+            }
+
+            .box {
+                position: absolute;
+                width: 70%;
+                top: 0;
+                bottom: 0;
+                left: 15%;
+                border: 2px solid $purple-light;
+                border-radius: 20px;
+                z-index: -1;
+            }
+        }
+    }
+}

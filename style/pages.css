@@ -333,4 +333,95 @@ section#contact .wrapper .wrapper-body form .text-center span.smaller {
   font-size: 11px;
   margin-top: 20px;
 }
+
+section#quienes-somos .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+section#quienes-somos .container h2 {
+  color: #301e79;
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: -0.01em;
+}
+
+section#quienes-somos .container .content {
+  padding: 140px 3.5em 70px;
+}
+
+section#quienes-somos .container .content .description {
+  color: #1b2632;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+section#quienes-somos .container .content .case {
+  color: #1b2632;
+  font-size: 14px;
+  line-height: 1.5em;
+  max-width: 65%;
+}
+
+section#quienes-somos .container .collage {
+  background-image: url("../assets/images/background/collage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section#quienes-somos .container .fundador-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section#quienes-somos .container .fundador-title h2 {
+  max-width: 400px;
+  margin-left: 1.2em;
+}
+
+section#quienes-somos .container .fundador-description {
+  text-align: center;
+  position: relative;
+  margin: 6em 0;
+}
+
+section#quienes-somos .container .fundador-description h4 {
+  padding: 6px 25px;
+  background-color: #6a4eba;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 22px;
+  margin: -18px auto 20px;
+  width: 170px;
+}
+
+section#quienes-somos .container .fundador-description img {
+  max-width: 82%;
+}
+
+section#quienes-somos .container .fundador-description p {
+  max-width: 65%;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #706f6f;
+  line-height: 1.5em;
+}
+
+section#quienes-somos .container .fundador-description .box {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  border: 2px solid #6a4eba;
+  border-radius: 20px;
+  z-index: -1;
+}
 /*# sourceMappingURL=pages.css.map */
