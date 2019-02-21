@@ -106,13 +106,104 @@ footer .container {
 footer .container .container-top {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6fr 3fr 3fr;
-      grid-template-columns: 6fr 3fr 3fr;
+  -ms-grid-columns: 6fr 2fr 4fr;
+      grid-template-columns: 6fr 2fr 4fr;
   grid-gap: 10px;
+}
+
+footer .container .container-top .footer-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.7px;
 }
 
 footer .container .container-top .content-left img {
   max-height: 60px;
+}
+
+footer .container .container-top .content-left p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 1.5em;
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+footer .container .container-top .content-left div a {
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+footer .container .container-top .content-middle ul {
+  padding: 0;
+}
+
+footer .container .container-top .content-middle ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+footer .container .container-top .content-middle ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+footer .container .container-top .content-right .contact {
+  margin: 10px 0;
+}
+
+footer .container .container-top .content-right .contact i {
+  width: 25px;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer .container .container-top .content-right .contact span {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+footer .container .container-top .content-right h5 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+footer .container .container-top .content-right .form-group {
+  margin-top: 15px;
+}
+
+footer .container .container-top .content-right .form-group input {
+  padding: 10px;
+  font-size: 13px;
+  background-color: #1b2632;
+  color: #ffffff;
+  border: 0;
+  min-width: 170px;
+}
+
+footer .container .container-top .content-right .form-group button {
+  padding: 8px 12px;
+  margin-left: -2px;
+  background-color: #92278f;
+  border: 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+footer .container .footer-line {
+  height: 2px;
+  background-color: #ffffff;
+  background-color: #1b2632;
+  margin: 2.5em 0 1.5em;
 }
 
 footer .container .container-bottom {
@@ -121,6 +212,26 @@ footer .container .container-bottom {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+}
+
+footer .container .container-bottom .content-left a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .container .container-bottom .content-left span {
+  padding: 0 15px;
+}
+
+footer .container .container-bottom .content-right {
+  text-align: right;
+}
+
+footer .container .container-bottom .content-right span {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .swiper-container {
