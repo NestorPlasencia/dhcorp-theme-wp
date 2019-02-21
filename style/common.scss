@@ -1,0 +1,132 @@
+// VARIABLES
+
+$purple: #301e79;
+$purple-light: #6a4eba;
+$gray: #706f6f;
+$white: #ffffff;
+$red: #ff6471;
+$yellow: #e5b300;
+$bg-sabiduria: rgba(50, 30, 113, 0.90);
+$bg-conocimiento: rgba(238, 22, 98, 0.90);
+$bg-metrica: rgba(37, 64, 222, 0.90);
+$bg-tecnologia: rgba(210, 42, 29, 0.90);
+$bg-footer: #121921;
+
+// BACKGROUND COLOR
+
+.bg-sabiduria {
+	background-color: $bg-sabiduria;
+}
+
+.bg-conocimiento {
+	background-color: $bg-conocimiento;
+}
+
+.bg-metrica {
+	background-color: $bg-metrica;
+}
+
+.bg-tecnologia {
+	background-color: $bg-tecnologia;
+}
+
+// FONT
+
+@font-face {
+	font-family: "forest_line.ttf";
+	src: url("../assets/fonts/forest_line_bold.ttf");
+}
+
+@font-face {
+	font-family: "Gotham-Black";
+	src: url("../assets/fonts/Gotham-Black.otf");
+}
+
+$fontSliderTitle: "forest_line.ttf";
+$fontTitle: "Source Sans Pro", sans-serif;
+$fontParagraph: "Source Sans Pro", sans-serif;
+$fontNavbar: "Gotham-Black";
+
+// GENERAL
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+  
+body {
+    background: $white;
+    margin: 0;
+    padding: 0;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+// NAVBAR
+
+nav {
+	background-color: $purple-light;
+	padding: 10px 0 6px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	a.brand {
+		display: inline-block;
+		padding-left: 15px;
+
+		img {
+			max-height: 35px;
+		}
+	}
+
+	ul.list-items {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		align-self: center;
+
+		li {
+			display: inline-block;
+			list-style: none;
+
+			a {
+				color: $white;
+				font-family: $fontNavbar;
+				font-size: 15px;
+				line-height: 1em;
+				text-decoration: none;
+				padding: 0 10px;
+				margin: 10px;
+			}
+
+			a:hover {
+				color: $yellow;
+			}
+
+			a.active {
+				color: $yellow;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: $bg-footer;
+
+	.container-top {
+		display: grid;
+		grid-template-columns: 6fr 3fr 3fr;
+		grid-gap: 10px;
+	}
+
+	.container-bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+}
