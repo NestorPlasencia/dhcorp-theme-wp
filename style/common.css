@@ -19,11 +19,6 @@
   src: url("../assets/fonts/forest_line_bold.ttf");
 }
 
-@font-face {
-  font-family: "Gotham-Black";
-  src: url("../assets/fonts/Gotham-Black.otf");
-}
-
 html, body {
   position: relative;
   height: 100%;
@@ -33,6 +28,7 @@ body {
   background: #ffffff;
   margin: 0;
   padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,7 +74,7 @@ nav ul.list-items li {
 
 nav ul.list-items li a {
   color: #ffffff;
-  font-family: "Gotham-Black";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   line-height: 1em;
   text-decoration: none;
@@ -96,9 +92,17 @@ nav ul.list-items li a.active {
 
 footer {
   background-color: #121921;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-footer .container-top {
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+footer .container .container-top {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 6fr 3fr 3fr;
@@ -106,7 +110,11 @@ footer .container-top {
   grid-gap: 10px;
 }
 
-footer .container-bottom {
+footer .container .container-top .content-left img {
+  max-height: 60px;
+}
+
+footer .container .container-bottom {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
