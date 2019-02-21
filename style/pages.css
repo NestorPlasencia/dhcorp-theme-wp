@@ -234,7 +234,103 @@ footer .container .container-bottom .content-right span {
   font-size: 15px;
 }
 
-section {
+section#contact {
   background-image: url("../assets/images/background/bg-contacto.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section#contact .wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 160px 0 100px;
+}
+
+section#contact .wrapper .wrapper-header {
+  text-align: center;
+  padding: 22px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e0349+0,9614b4+100 */
+  background: #4e0349;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#4e0349), to(#9614b4));
+  background: linear-gradient(to right, #4e0349 0%, #9614b4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e0349', endColorstr='#9614b4',GradientType=1 );
+  /* IE6-9 */
+}
+
+section#contact .wrapper .wrapper-header h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+section#contact .wrapper .wrapper-body {
+  background-color: #ffffff;
+  padding: 40px 25px 30px;
+}
+
+section#contact .wrapper .wrapper-body form .form-columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  grid-gap: 15px 25px;
+}
+
+section#contact .wrapper .wrapper-body form label {
+  color: #a6a6a6;
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+}
+
+section#contact .wrapper .wrapper-body form input,
+section#contact .wrapper .wrapper-body form textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #a6a6a6;
+  font-size: 13px;
+  padding: 5px 0;
+  outline: transparent;
+  width: 100%;
+  resize: none;
+}
+
+section#contact .wrapper .wrapper-body form .form-textarea {
+  margin-top: 15px;
+}
+
+section#contact .wrapper .wrapper-body form .text-center {
+  text-align: center;
+}
+
+section#contact .wrapper .wrapper-body form .text-center button {
+  background-color: #3f9fff;
+  padding: 8px 40px;
+  margin: 30px 0 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+section#contact .wrapper .wrapper-body form .text-center p {
+  color: #a6a6a6;
+  max-width: 280px;
+  margin: 0 auto 20px;
+  font-size: 14px;
+}
+
+section#contact .wrapper .wrapper-body form .text-center span.smaller {
+  color: #a6a6a6;
+  font-size: 11px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=pages.css.map */
