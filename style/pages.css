@@ -424,4 +424,79 @@ section#quienes-somos .container .fundador-description .box {
   border-radius: 20px;
   z-index: -1;
 }
+
+section#clientes .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.3fr;
+}
+
+section#clientes .container .left-content {
+  padding: 120px 2.5em 60px;
+}
+
+section#clientes .container .left-content img {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+section#clientes .container .left-content h2 {
+  color: #301e79;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: -0.01em;
+  line-height: 1em;
+}
+
+section#clientes .container .left-content .position {
+  font-size: 12px;
+  margin: 0;
+  color: #706f6f;
+}
+
+section#clientes .container .left-content .description {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: justify;
+  color: #706f6f;
+}
+
+section#clientes .container .right-content {
+  padding: 200px 0 70px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+section#clientes .container .right-content .brands {
+  border-left: 1px solid #6a4eba;
+  height: 100%;
+  padding: 80px 30px 40px;
+}
+
+section#clientes .container .right-content .brands h3 {
+  color: #706f6f;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: -0.01em;
+  line-height: 1em;
+}
+
+section#clientes .container .right-content .brands .columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+section#clientes .container .right-content .brands .columns .logo {
+  height: 40px;
+  width: 100%;
+  background-color: #a6a6a6;
+  opacity: 0.5;
+}
 /*# sourceMappingURL=pages.css.map */
