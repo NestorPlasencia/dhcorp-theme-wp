@@ -499,4 +499,89 @@ section#clientes .container .right-content .brands .columns .logo {
   background-color: #a6a6a6;
   opacity: 0.5;
 }
+
+section#servicios {
+  max-width: 1250px;
+  margin: 0 auto 100px;
+  padding-top: 150px;
+}
+
+section#servicios .carousel-3d-container {
+  margin: 0 !important;
+}
+
+section#servicios .carousel-3d-container figure {
+  margin: 0;
+}
+
+section#servicios .carousel-3d-container figcaption {
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  min-width: 100%;
+  text-align: center;
+  display: table;
+}
+
+section#servicios .carousel-3d-container figcaption .description {
+  max-width: 80%;
+  background-color: #ffffff;
+  margin: 0 auto 15px;
+  padding: 15px;
+}
+
+section#servicios .carousel-3d-container figcaption .description h2 {
+  color: #6a4eba;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: -0.01em;
+  line-height: 1em;
+}
+
+section#servicios .carousel-3d-container figcaption .description p {
+  font-size: 14px;
+}
+
+section#servicios .carousel-3d-container figcaption .button {
+  background-color: #ffffff;
+  padding: 25px 0;
+  margin-bottom: -1px;
+}
+
+section#servicios .carousel-3d-container figcaption .button button {
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px 30px;
+  color: #301e79;
+  border: 2px solid #301e79;
+  background-color: #ffffff;
+  font-weight: 600;
+}
+
+section#servicios .carousel-3d-slide,
+section#servicios .carousel-3d-slide.current {
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+  margin-top: -10px;
+}
+
+section#servicios .prev span,
+section#servicios .next span {
+  color: #fff;
+  background-color: rgba(0, 103, 177, 0.9);
+  border-radius: 0%;
+  display: block;
+  text-align: center;
+  line-height: 80px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  -webkit-transform: scale(0.6, 0.6);
+          transform: scale(0.6, 0.6);
+}
+
+section#servicios a.next {
+  right: 30px;
+}
 /*# sourceMappingURL=pages.css.map */
