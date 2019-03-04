@@ -165,11 +165,13 @@
 			position: relative;
 			margin: 5px 0;
 			opacity: 1 !important;
-			height: 15px;
-			width: 15px;
+			height: 17px;
+			width: 17px;
 
 			@media screen and (max-width: 800px) {
 				background-color: $purple;
+				height: 15px;
+				width: 15px;
 			}
 
 			@media screen and (max-width: 500px) {
