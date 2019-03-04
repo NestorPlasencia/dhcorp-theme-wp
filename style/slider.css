@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
   background-color: #6a4eba;
-  padding: 10px 0 6px;
+  padding: 12px 0;
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -45,8 +45,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
 }
 
 nav a.brand {
@@ -62,9 +62,6 @@ nav ul.list-items {
   display: inline-block;
   padding: 0;
   margin: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 nav ul.list-items li {
@@ -79,7 +76,7 @@ nav ul.list-items li a {
   font-weight: 800;
   line-height: 1em;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 15px;
   margin: 10px;
 }
 
@@ -89,6 +86,26 @@ nav ul.list-items li a:hover {
 
 nav ul.list-items li a.active {
   color: #e5b300;
+}
+
+.header-brand {
+  background-color: #301e79;
+  display: inline-block;
+  padding: 12px 100px 8px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: -90px;
+  position: absolute;
+  z-index: 1000;
+  top: 25px;
+}
+
+.header-brand .logo {
+  display: inline-block;
+}
+
+.header-brand .logo img {
+  height: 60px;
 }
 
 footer {
