@@ -49,6 +49,13 @@ nav {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 767px) {
+  nav {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
 nav a.brand {
   display: inline-block;
   padding-left: 15px;
@@ -62,6 +69,12 @@ nav ul.list-items {
   display: inline-block;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  nav ul.list-items {
+    display: none;
+  }
 }
 
 nav ul.list-items li {
@@ -78,6 +91,13 @@ nav ul.list-items li a {
   text-decoration: none;
   padding: 0 15px;
   margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav ul.list-items li a {
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
 
 nav ul.list-items li a:hover {
@@ -100,12 +120,25 @@ nav ul.list-items li a.active {
   top: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .header-brand {
+    margin-left: -90px;
+    top: 10px;
+  }
+}
+
 .header-brand .logo {
   display: inline-block;
 }
 
 .header-brand .logo img {
   height: 55px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-brand .logo img {
+    height: 35px;
+  }
 }
 
 footer {
@@ -249,6 +282,86 @@ footer .container .container-bottom .content-right {
 footer .container .container-bottom .content-right span {
   font-weight: 700;
   font-size: 15px;
+}
+
+#menu, .sub-menu {
+  display: none;
+  list-style: none;
+}
+
+ul#menu {
+  padding: 70px 40px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #6a4eba;
+  bottom: 0;
+  top: 0;
+  text-align: right;
+  height: 100vh;
+}
+
+ul#menu li {
+  padding: 3px 0;
+  margin: 5px 0;
+}
+
+ul#menu li a {
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 15px;
+  z-index: 1000;
+  right: 5px;
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2) {
+  top: 40%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3) {
+  top: 40%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
 }
 
 section#contact {

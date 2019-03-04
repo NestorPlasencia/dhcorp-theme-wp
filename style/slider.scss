@@ -48,6 +48,11 @@
 				grid-gap: 10px;
 				height: 100%;
 
+				@media screen and (max-width: 800px) {
+					grid-template-columns: 1fr;
+					grid-gap: 0;
+				}
+
 				.content-left {
 					-ms-flex-item-align: center;
 					-ms-grid-row-align: center;
@@ -61,10 +66,24 @@
 					opacity: 0;
 					padding-top: 80px;
 
+					@media screen and (max-width: 800px) {
+						width: 80%;
+						margin-left: auto;
+						padding: 10px 50px 0 0 !important;
+					}
+
+					@media screen and (max-width: 500px) {
+						padding: 0 20px 0 0 !important;
+					}
+					
 					.line {
 						height: 3px;
 						width: 140px;
 						background-color: $red;
+
+						@media screen and (max-width: 500px) {
+							width: 75px;
+						}
 					}
 
 					h3 {
@@ -75,6 +94,19 @@
 						letter-spacing: -0.01em;
 						line-height: 1.15em;
 						padding: .5em 0 .5em;
+
+						@media screen and (max-width: 1200px) {
+							font-size: 3em;
+						}
+
+						@media screen and (max-width: 800px) {
+							font-size: 28px;
+						}
+
+						@media screen and (max-width: 500px) {
+							font-size: 25px;
+							font-weight: 800;
+						}
 					}
 
 					a {
@@ -95,6 +127,10 @@
 					background-repeat: no-repeat;
 					background-size: cover;
 					position: relative;
+
+					@media screen and (max-width: 500px) {
+						margin-top: -50px;
+					}
 
 					.title {
 						padding: .9em .8em .5em;
@@ -123,16 +159,23 @@
 			-webkit-transition: box-shadow 0.3s ease;
 			transition: box-shadow 0.3s ease;
 			background: transparent;
-			width: 15px;
-			height: 15px;
 			padding: 0;
 			text-indent: -999em;
 			background: $white;
 			position: relative;
 			margin: 5px 0;
 			opacity: 1 !important;
-			height: 18px;
-			width: 18px;
+			height: 15px;
+			width: 15px;
+
+			@media screen and (max-width: 800px) {
+				background-color: $purple;
+			}
+
+			@media screen and (max-width: 500px) {
+				width: 12px;
+				height: 12px;
+			}
 		}
 
 		.swiper-pagination-bullet:before {
@@ -149,6 +192,17 @@
 			text-indent: -999em;
 			cursor: pointer;
 			position: absolute;
+
+			@media screen and (max-width: 800px) {
+				background-color: $purple;
+				width: 13px;
+				height: 13px;
+			}
+
+			@media screen and (max-width: 500px) {
+				width: 12px;
+				height: 12px;
+			}
 		}
 		
 		.swiper-pagination-bullet.swiper-pagination-bullet-active,
@@ -157,6 +211,10 @@
 			border: none;
 			border-radius: 50%;
 			background: transparent;
+
+			@media screen and (max-width: 800px) {
+				box-shadow: 0 0 0 1px $purple;
+			}
 		}
 		
 		.swiper-pagination-bullet.swiper-pagination-bullet-active:before, 
@@ -166,15 +224,46 @@
 			background-color: $white;
 			top: 1.5px;
 			left: 1.5px;
+
+			@media screen and (max-width: 800px) {
+				background-color: $purple;
+				transform: scale(0.8);
+				-webkit-transform: scale(0.8);
+				top: 0.8px;
+				left: 0.8px;
+			}
+
+			@media screen and (max-width: 500px) {
+				top: 0.5px;
+				left: 0.5px;
+			}
 		}
 	}
 
 	.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
 		right: 47%;
 		top: 55%;
+
+		@media screen and (max-width: 800px) {
+			right: 4%;
+			top: 40%;
+		}
+
+		@media screen and (max-width: 500px) {
+			right: 93%;
+			top: 29%;
+		}
 	}
 
 	.swiper-pagination-bullets .swiper-pagination-bullet {
 		margin: 35px 0 !important;
+
+		@media screen and (max-width: 800px) {
+			margin: 25px 0 !important;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin: 20px 0 !important;
+		}
 	}
 }
