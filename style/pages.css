@@ -153,6 +153,12 @@ footer .container {
   padding: 4em 0;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container {
+    padding: 20px 0 10px;
+  }
+}
+
 footer .container .container-top {
   display: -ms-grid;
   display: grid;
@@ -161,14 +167,36 @@ footer .container .container-top {
   grid-gap: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
 footer .container .container-top .footer-title {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.7px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-top .footer-title {
+    font-size: 15px;
+  }
+}
+
 footer .container .container-top .content-left img {
   max-height: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-left img {
+    max-height: 45px;
+  }
 }
 
 footer .container .container-top .content-left p {
@@ -180,11 +208,23 @@ footer .container .container-top .content-left p {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-left p {
+    font-size: 12px;
+  }
+}
+
 footer .container .container-top .content-left div a {
   color: #ffffff;
   margin-left: 10px;
   padding: 0 5px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-left div a {
+    font-size: 14px;
+  }
 }
 
 footer .container .container-top .content-middle ul {
@@ -196,11 +236,23 @@ footer .container .container-top .content-middle ul li {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-middle ul li {
+    margin: 5px 0;
+  }
+}
+
 footer .container .container-top .content-middle ul li a {
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
   letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-middle ul li a {
+    font-size: 14px;
+  }
 }
 
 footer .container .container-top .content-right .contact {
@@ -218,11 +270,23 @@ footer .container .container-top .content-right .contact span {
   letter-spacing: 0.5px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-right .contact span {
+    font-size: 12px;
+  }
+}
+
 footer .container .container-top .content-right h5 {
   font-weight: 700;
   font-size: 17px;
   margin-top: 30px;
   letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container .container-top .content-right h5 {
+    font-size: 14px;
+  }
 }
 
 footer .container .container-top .content-right .form-group {
@@ -264,6 +328,12 @@ footer .container .container-bottom {
   grid-gap: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container .container-bottom {
+    padding: 15px;
+  }
+}
+
 footer .container .container-bottom .content-left a {
   font-weight: 400;
   font-size: 14px;
@@ -282,6 +352,12 @@ footer .container .container-bottom .content-right {
 footer .container .container-bottom .content-right span {
   font-weight: 700;
   font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  footer .container .container-bottom .content-right span {
+    font-size: 12px;
+  }
 }
 
 #menu, .sub-menu {
@@ -369,6 +445,7 @@ section#contact {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 10px;
 }
 
 section#contact .wrapper {
@@ -472,6 +549,14 @@ section#quienes-somos .container {
   grid-gap: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+
 section#quienes-somos .container h2 {
   color: #301e79;
   font-weight: 900;
@@ -503,6 +588,13 @@ section#quienes-somos .container .collage {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  section#quienes-somos .container .collage {
+    min-height: 70vh;
+    margin-bottom: 5em;
+  }
 }
 
 section#quienes-somos .container .fundador-title {
@@ -562,8 +654,21 @@ section#clientes .container {
       grid-template-columns: 1fr 1.3fr;
 }
 
+@media screen and (max-width: 800px) {
+  section#clientes .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 section#clientes .container .left-content {
   padding: 120px 2.5em 60px;
+}
+
+@media screen and (max-width: 800px) {
+  section#clientes .container .left-content {
+    text-align: center;
+  }
 }
 
 section#clientes .container .left-content img {
@@ -578,6 +683,12 @@ section#clientes .container .left-content h2 {
   font-size: 35px;
   letter-spacing: -0.01em;
   line-height: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  section#clientes .container .left-content h2 {
+    font-size: 28px;
+  }
 }
 
 section#clientes .container .left-content .position {
@@ -600,10 +711,26 @@ section#clientes .container .right-content {
       align-self: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  section#clientes .container .right-content {
+    border-left: 0;
+    height: 100%;
+    padding: 0 30px 30px;
+  }
+}
+
 section#clientes .container .right-content .brands {
   border-left: 1px solid #6a4eba;
   height: 100%;
   padding: 80px 30px 40px;
+}
+
+@media screen and (max-width: 800px) {
+  section#clientes .container .right-content .brands {
+    border-left: 0;
+    height: 100%;
+    padding: 0px;
+  }
 }
 
 section#clientes .container .right-content .brands h3 {
@@ -612,6 +739,12 @@ section#clientes .container .right-content .brands h3 {
   font-size: 25px;
   letter-spacing: -0.01em;
   line-height: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  section#clientes .container .right-content .brands h3 {
+    font-size: 17px;
+  }
 }
 
 section#clientes .container .right-content .brands .columns {
@@ -634,6 +767,15 @@ section#servicios {
   max-width: 1250px;
   margin: 0 auto 100px;
   padding-top: 150px;
+}
+
+@media screen and (max-width: 800px) {
+  section#servicios {
+    margin: 0 auto 50px;
+    padding-top: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 section#servicios .carousel-3d-container {
@@ -668,8 +810,20 @@ section#servicios .carousel-3d-container figcaption .description h2 {
   line-height: 1em;
 }
 
+@media screen and (max-width: 800px) {
+  section#servicios .carousel-3d-container figcaption .description h2 {
+    font-size: 22px;
+  }
+}
+
 section#servicios .carousel-3d-container figcaption .description p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  section#servicios .carousel-3d-container figcaption .description p {
+    font-size: 13px;
+  }
 }
 
 section#servicios .carousel-3d-container figcaption .button {
