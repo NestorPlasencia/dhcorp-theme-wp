@@ -1,0 +1,81 @@
+
+@keyframes meditation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animation-container{
+    position: fixed;
+    bottom: 1.2em;
+    right: 1.2em;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .character {
+        max-width: 100px;
+        animation-name: meditation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    .thinkings {
+        display: flex;
+        .thinking {
+            position: relative;
+            background-color: rgba($color:white, $alpha: 0.9);
+            border-radius: 100px;
+            padding: 10px;
+            margin: 0 5px;
+            max-width: 100px;
+            height: fit-content;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            &.explicit:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: white transparent transparent transparent;
+            }
+            &.implicit:after {
+                content: "";
+                position: absolute;
+                top: calc(100% + 2px);
+                left: 50%;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: rgba($color:white, $alpha: 0.9);
+            }
+            &.implicit:before {
+                content: "";
+                position: absolute;
+                top: calc(100% + 15px);
+                left: 50%;
+                border-radius: 50%;
+                width: 7px;
+                height: 7px;
+                background-color: rgba($color:white, $alpha: 0.9);
+            }
+        }
+        .thinking:nth-of-type(1) {
+            transform:  rotate(-30deg) translate(-20px,20px);
+        }
+        .thinking:last-child {
+            transform:  rotate(30deg) translate(20px,20px);
+        }
+    }
+}
+
