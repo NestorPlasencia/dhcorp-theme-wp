@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.font-bold {
+  font-weight: 900;
+}
+
 nav {
   background-color: #6a4eba;
   padding: 12px 0;
@@ -546,7 +550,7 @@ ul#menu li a {
 .swiper-container .swiper-wrapper .swiper-slide .slide-container .content-left h3 {
   color: #301e79;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 3.5em;
   letter-spacing: -0.01em;
   line-height: 1.15em;
@@ -729,6 +733,7 @@ ul#menu li a {
 .swiper-container .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
   right: 47%;
   top: 55%;
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
