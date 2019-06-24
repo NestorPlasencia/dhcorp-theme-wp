@@ -1,0 +1,123 @@
+@-webkit-keyframes meditation {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes meditation {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animation-container {
+  position: fixed;
+  bottom: 1.2em;
+  right: 1.2em;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.animation-container .character {
+  max-width: 130px;
+  -webkit-animation-name: meditation;
+          animation-name: meditation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.animation-container .thinkings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.animation-container .thinkings .thinking {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 0 5px;
+  max-width: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.animation-container .thinkings .thinking.explicit:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.animation-container .thinkings .thinking.implicit:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.animation-container .thinkings .thinking.implicit:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.animation-container .thinkings .thinking:nth-of-type(1) {
+  -webkit-transform: rotate(-30deg) translate(-20px, 20px);
+          transform: rotate(-30deg) translate(-20px, 20px);
+}
+
+.animation-container .thinkings .thinking:last-child {
+  -webkit-transform: rotate(30deg) translate(20px, 20px);
+          transform: rotate(30deg) translate(20px, 20px);
+}
+/*# sourceMappingURL=animation.css.map */
