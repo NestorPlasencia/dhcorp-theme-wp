@@ -46,7 +46,7 @@
 }
 
 .animation-container .character {
-  max-width: 100px;
+  max-width: 130px;
   -webkit-animation-name: meditation;
           animation-name: meditation;
   -webkit-animation-duration: 4s;
