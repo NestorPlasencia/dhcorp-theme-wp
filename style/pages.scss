@@ -311,6 +311,7 @@ section#servicios {
 				border: 2px solid $purple;
 				background-color: $white;
 				font-weight: 600;
+				cursor: pointer;
 			}
 		}
 	}
@@ -339,4 +340,86 @@ section#servicios {
 	a.next {
 		right: 30px;
 	}
+}
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed; 
+	z-index: 200;  
+	left: 0;
+	top: 0;
+	bottom: 0;  
+	right: 0;  
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.4);
+	transition-duration: 0.4s;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.modal-content {
+		background-color: #fefefe;
+		margin: 40px auto;
+		border-radius: 10px;
+		width: 70%;
+		position: relative;
+		overflow: hidden;
+		.close {
+			position: absolute;
+			top: 0.25em;
+			right: 1em;
+			color: #aaa;
+			font-size: 40px;
+			font-weight: bold;
+			cursor: pointer;
+			&:hover,
+			&:focus {
+				color: black;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+
+		.service-hero img.hero {
+			width: 100%;
+			height: auto;
+			display: none;
+		}
+		.service-content {
+			display: flex;
+			padding: 40px;
+			.service-description {
+				width: 70%;
+				padding-right: 20px;
+				display: none;
+			}
+			.service-contact {
+				padding-left: 20px;
+			}
+		}
+	}
+	
+}
+
+.modal-service1 .modal-content .service-hero img.hero-service1,
+.modal-service1 .modal-content .service-content .service-description1 {
+	display: block;
+}
+.modal-service2 .modal-content .service-hero img.hero-service2,
+.modal-service2 .modal-content .service-content .service-description2 {
+	display: block;
+}
+.modal-service3 .modal-content .service-hero img.hero-service3,
+.modal-service3 .modal-content .service-content .service-description3 {
+	display: block;
+}
+.modal-service4 .modal-content .service-hero img.hero-service4,
+.modal-service4 .modal-content .service-content .service-description4 {
+	display: block;
 }
