@@ -44,7 +44,7 @@
 
 			.slide-container {
 				display: grid;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr 0.98fr;
 				grid-gap: 10px;
 				height: 100%;
 
@@ -57,14 +57,17 @@
 					-ms-flex-item-align: center;
 					-ms-grid-row-align: center;
 					align-self: center;
-					padding: 0 2.5em;
+					padding: 70px 1em 0 95px;
 					-webkit-transition:all 0.3s linear;
 					-moz-transition:all 0.3s linear;
 					-o-transition:all 0.3s linear;
 					-ms-transition:all 0.3s linear;    
 					transition:all 0.3s linear;
 					opacity: 0;
-					padding-top: 80px;
+
+					@media screen and (max-width: 1200px) {
+						padding-left: 85px;
+					}
 
 					@media screen and (max-width: 800px) {
 						width: 80%;
@@ -96,7 +99,11 @@
 						padding: .5em 0 .5em;
 
 						@media screen and (max-width: 1200px) {
-							font-size: 3em;
+							font-size: 2.6em;
+						}
+
+						@media screen and (max-width: 1000px) {
+							font-size: 2em;
 						}
 
 						@media screen and (max-width: 800px) {
@@ -153,20 +160,23 @@
 	}
 
 	.swiper-pagination {
+		animation-name: meditation;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+
 		.swiper-pagination-bullet {
-			border-radius: 50%;
-			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0);
-			-webkit-transition: box-shadow 0.3s ease;
-			transition: box-shadow 0.3s ease;
-			background: transparent;
-			padding: 0;
-			text-indent: -999em;
-			background: $white;
-			position: relative;
-			margin: 5px 0;
-			opacity: 1 !important;
-			height: 17px;
-			width: 17px;
+			border: solid $purple;
+			border-width: 0 0.2em 0.2em 0;
+			display: inline-block;
+			padding: 0.2em;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			border-radius: 0 !important;
+			background-color: transparent;
+			position: absolute;
+			bottom: 0;
+			opacity: 0.5;
 
 			@media screen and (max-width: 800px) {
 				background-color: $purple;
@@ -179,94 +189,21 @@
 				height: 12px;
 			}
 		}
-
-		.swiper-pagination-bullet:before {
-			content: "";
-			-webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
-			transition: background-color 0.3s ease, transform 0.3s ease;
-			top: 0;
-			left: 0;
-			width: 15px;
-			height: 15px;
-			outline: none;
-			border-radius: 50%;
-			background-color: $white;
-			text-indent: -999em;
-			cursor: pointer;
-			position: absolute;
-
-			@media screen and (max-width: 800px) {
-				background-color: $purple;
-				width: 13px;
-				height: 13px;
-			}
-
-			@media screen and (max-width: 500px) {
-				width: 12px;
-				height: 12px;
-			}
-		}
 		
 		.swiper-pagination-bullet.swiper-pagination-bullet-active,
 		.swiper-pagination-bullet:hover {
-			box-shadow: 0 0 0 1px $white;
-			border: none;
-			border-radius: 50%;
-			background: transparent;
-
-			@media screen and (max-width: 800px) {
-				box-shadow: 0 0 0 1px $purple;
-			}
-		}
-		
-		.swiper-pagination-bullet.swiper-pagination-bullet-active:before, 
-		.swiper-pagination-bullet:hover:before {
-			transform: scale(0.75);
-			-webkit-transform: scale(0.75);
-			background-color: $white;
-			top: 1.5px;
-			left: 1.5px;
-
-			@media screen and (max-width: 800px) {
-				background-color: $purple;
-				transform: scale(0.8);
-				-webkit-transform: scale(0.8);
-				top: 0.8px;
-				left: 0.8px;
-			}
-
-			@media screen and (max-width: 500px) {
-				top: 0.5px;
-				left: 0.5px;
-			}
+			border: solid $purple-light;
+			border-width: 0 0.21em 0.21em 0;
+			display: inline-block;
+			padding: 0.21em;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			opacity: 0.1;
 		}
 	}
 
 	.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
-		right: 47%;
-		top: 55%;
-		display: none;
-
-		@media screen and (max-width: 800px) {
-			right: 4%;
-			top: 40%;
-		}
-
-		@media screen and (max-width: 500px) {
-			right: 93%;
-			top: 29%;
-		}
-	}
-
-	.swiper-pagination-bullets .swiper-pagination-bullet {
-		margin: 35px 0 !important;
-
-		@media screen and (max-width: 800px) {
-			margin: 25px 0 !important;
-		}
-
-		@media screen and (max-width: 500px) {
-			margin: 20px 0 !important;
-		}
+		right: 52%;
+		top: 95%;
 	}
 }

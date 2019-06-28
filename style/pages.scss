@@ -92,6 +92,27 @@ section#contact {
 						margin-top: 20px;
 					}
 				}
+
+				select {
+					width: 100%;
+					background-color: #ccc0f1;
+					background-position: 96% center;
+					background-repeat: no-repeat;
+					background-size: 8px;
+					background-image: url("../assets/images/icons/arrow.png");
+					color: $purple;
+					font-family: $fontSourceSans;
+					font-size: 13px;
+					-webkit-appearance: button;
+					border-radius: 5px;
+					padding: 2px 7px;
+					margin-top: 7px;
+					border: 0;
+				}
+
+				select:focus {
+					outline: none;
+				}
 			}
 		}
 	}
@@ -100,10 +121,10 @@ section#contact {
 section#quienes-somos {
 	.container {
 		display: grid;
-		grid-template-columns: 3.5fr 8.5fr;
-		grid-gap: 10px;
+		grid-template-columns: 340px 1fr;
+		grid-gap: 30px;
 		padding: 130px 0 50px;
-		max-width: 1400px;
+		max-width: 1300px;
 		margin: 0 auto;
 
 		@media screen and (max-width: 767px) {
@@ -114,12 +135,12 @@ section#quienes-somos {
 		h2 {
 			color: $purple;
 			font-weight: 900;
-			font-size: 2.5em;
+			font-size: 2.3em;
 			letter-spacing: -0.01em;
 		}
 		
 		.content-left {
-			padding: 30px;
+			padding: 27px;
 			background-color: #e4ddf2;
 
 			img {
@@ -128,15 +149,31 @@ section#quienes-somos {
 		}
 
 		.content-right {
+			border-left: 1px solid #e4ddf2;
+			padding-left: 30px;
+
+			iframe {
+				width: 100%;
+				height: 60vh;
+				min-height: 450px;
+				padding-bottom: 25px;
+				margin-bottom: 7px;
+				border-bottom: 1px solid $purple;
+			}
+
 			.clients {
 				display: flex;
 				max-width: 100% !important;
 				flex-direction: row;
 				flex-wrap: wrap;
+				align-content: center;
+				justify-content: space-between;
+				margin-top: 10px;
 
 				img {
-					max-height: 40px;
-					margin: 10px;
+					max-height: 35px;
+					margin: 10px 5px;
+					filter: grayscale(1);
 				}
 			}
 		}

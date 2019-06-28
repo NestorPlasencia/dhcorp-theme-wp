@@ -8,30 +8,8 @@ $gray-dark: #1b2632;
 $white: #ffffff;
 $red: #ff6471;
 $yellow: #e5b300;
-$bg-sabiduria: rgba(50, 30, 113, 0.90);
-$bg-conocimiento: rgba(238, 22, 98, 0.90);
-$bg-metrica: rgba(37, 64, 222, 0.90);
-$bg-tecnologia: rgba(210, 42, 29, 0.90);
 $bg-footer: #121921;
 $btn-pink: #92278f;
-
-// BACKGROUND COLOR
-
-.bg-sabiduria {
-	background-color: $bg-sabiduria;
-}
-
-.bg-conocimiento {
-	background-color: $bg-conocimiento;
-}
-
-.bg-metrica {
-	background-color: $bg-metrica;
-}
-
-.bg-tecnologia {
-	background-color: $bg-tecnologia;
-}
 
 // FONT
 
@@ -63,6 +41,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-bold {
 	font-weight: 900;
+}
+
+.hide-desktop {
+	visibility: hidden; 
+
+	@media screen and (max-width: 800px) {
+		visibility: visible;
+	}
+}
+
+// Animation
+
+@keyframes meditation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 // NAVBAR
@@ -131,35 +131,6 @@ nav {
 	}
 }
 
-.header-brand {
-	background-color: $purple;
-    display: inline-block;
-    padding: 12px 100px 8px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin-left: -90px;
-    position: absolute;
-    z-index: 1000;
-	top: 25px;
-	
-	@media screen and (max-width: 767px) {
-		margin-left: -90px;
-		top: 10px;
-	}
-	
-	.logo {
-		display: inline-block;
-
-		img {
-			height: 55px;
-
-			@media screen and (max-width: 1200px) {
-				height: 35px;
-			}
-		}
-	}
-}
-
 footer {
     background-color: $bg-footer;
     color: $white;
@@ -168,7 +139,7 @@ footer {
     .container {
         max-width: 1200px;
         margin: 0 auto;
-		padding: 4em 0;
+		padding: 4em 0 2.5em;
 		
 		@media screen and (max-width: 800px) {
 			padding: 20px 0 10px;
@@ -360,7 +331,6 @@ footer {
     }
 }
 
-
 #menu, .sub-menu {
 	display: none;
 	list-style: none;
@@ -443,5 +413,25 @@ ul#menu {
 @media screen and (min-width: 768px) {
 	.menu-mobile {
 		display: none;
+	}
+}
+
+// SOCIAL NETWORK
+
+.social-network {
+	position: fixed;
+    background-color: $purple;
+    z-index: 999;
+    bottom: 10%;
+	padding: 10px 18px 10px 8px;
+    border-radius: 0 30px 30px 0;
+	
+	a {
+		display: block;
+		margin-top: 5px;
+
+		img {
+			height: 30px;
+		}
 	}
 }
