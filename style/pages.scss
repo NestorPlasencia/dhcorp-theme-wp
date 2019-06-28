@@ -92,6 +92,27 @@ section#contact {
 						margin-top: 20px;
 					}
 				}
+
+				select {
+					width: 100%;
+					background-color: #ccc0f1;
+					background-position: 96% center;
+					background-repeat: no-repeat;
+					background-size: 8px;
+					background-image: url("../assets/images/icons/arrow.png");
+					color: $purple;
+					font-family: $fontSourceSans;
+					font-size: 13px;
+					-webkit-appearance: button;
+					border-radius: 5px;
+					padding: 2px 7px;
+					margin-top: 7px;
+					border: 0;
+				}
+
+				select:focus {
+					outline: none;
+				}
 			}
 		}
 	}

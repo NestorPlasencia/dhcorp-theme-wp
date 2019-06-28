@@ -557,6 +557,27 @@ section#contact .wrapper .wrapper-body form .text-center span.smaller {
   margin-top: 20px;
 }
 
+section#contact .wrapper .wrapper-body form select {
+  width: 100%;
+  background-color: #ccc0f1;
+  background-position: 96% center;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-image: url("../assets/images/icons/arrow.png");
+  color: #301e79;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  -webkit-appearance: button;
+  border-radius: 5px;
+  padding: 2px 7px;
+  margin-top: 7px;
+  border: 0;
+}
+
+section#contact .wrapper .wrapper-body form select:focus {
+  outline: none;
+}
+
 section#quienes-somos .container {
   display: -ms-grid;
   display: grid;
