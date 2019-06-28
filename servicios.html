@@ -5,7 +5,7 @@
 		<title>DH Corp | Servicios</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/pages.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/all.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
 		<link rel="stylesheet" href="http://www.cssjquery.com/plugins/coverflow/css/style.min.css">
 	</head>
@@ -37,10 +37,10 @@
 				<carousel-3d :controls-visible="true" :clickable="false" :width="700" :height="500" :display="3" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'">
 					<slide :index="0">
 						<figure>
-							<img src="assets/images/servicios.png">
+							<img src="assets/images/background/bg-innovacion.png">
 							<figcaption>
 								<div class="description">
-									<h2>SERVICIO 1</h2>
+									<h2>Innovación</h2>
 									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
 								</div>
 								<div class="button">
@@ -51,10 +51,10 @@
 					</slide>
 					<slide :index="1">
 						<figure>
-							<img src="assets/images/servicios.png">
+							<img src="assets/images/background/bg-capacitacion_inhouse.png">
 							<figcaption>
 								<div class="description">
-									<h2>SERVICIO 2</h2>
+									<h2>Capacitación Inhouse</h2>
 									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
 								</div>
 								<div class="button">
@@ -65,10 +65,10 @@
 					</slide>
 					<slide :index="2">
 						<figure>
-							<img src="assets/images/servicios.png">
+							<img src="assets/images/background/bg-coaching_lideres.png">
 							<figcaption>
 								<div class="description">
-									<h2>SERVICIO 3</h2>
+									<h2>Coaching Líderes</h2>
 									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
 								</div>
 								<div class="button">
@@ -79,14 +79,42 @@
 					</slide>
 					<slide :index="3">
 						<figure>
-							<img src="assets/images/servicios.png">
+							<img src="assets/images/background/bg-facilitadores_ certificados.png">
 							<figcaption>
 								<div class="description">
-									<h2>SERVICIO 4</h2>
+									<h2>Facilitadores Certificados</h2>
 									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
 								</div>
 								<div class="button">
 									<button onclick="showModal('modal-service4')">Ver mas</button>
+								</div>
+							</figcaption>
+						</figure>
+					</slide>
+					<slide :index="4">
+						<figure>
+							<img src="assets/images/background/bg-transformacion_ cultural.png">
+							<figcaption>
+								<div class="description">
+									<h2>Transformación Cultural</h2>
+									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+								</div>
+								<div class="button">
+									<button onclick="showModal('modal-service5')">Ver mas</button>
+								</div>
+							</figcaption>
+						</figure>
+					</slide>
+					<slide :index="5">
+						<figure>
+							<img src="assets/images/background/bg-visual_thinking.png">
+							<figcaption>
+								<div class="description">
+									<h2>Visual Thinking</h2>
+									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+								</div>
+								<div class="button">
+									<button onclick="showModal('modal-service6')">Ver mas</button>
 								</div>
 							</figcaption>
 						</figure>
@@ -99,26 +127,36 @@
 			<div class="modal-content">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<header class="service-hero">
-					<img class="hero hero-service1" src="https://via.placeholder.com/1600x460" alt="">
-					<img class="hero hero-service2" src="https://via.placeholder.com/1600x460" alt="">
-					<img class="hero hero-service3" src="https://via.placeholder.com/1600x460" alt="">
-					<img class="hero hero-service4" src="https://via.placeholder.com/1600x460" alt="">
+					<img class="hero hero-service1" src="assets/images/background/bg-innovacion.png" alt="Innovacion">
+					<img class="hero hero-service2" src="assets/images/background/bg-capacitacion_inhouse.png" alt="Capacitacion Inhouse">
+					<img class="hero hero-service3" src="assets/images/background/bg-coaching_lideres.png" alt="Coaching Lideres">
+					<img class="hero hero-service4" src="assets/images/background/bg-facilitadores_ certificados.png" alt="Facilitadores Certificados">
+					<img class="hero hero-service5" src="assets/images/background/bg-transformacion_ cultural.png" alt="Transformacion Cultural">
+					<img class="hero hero-service6" src="assets/images/background/bg-visual_thinking.png" alt="Visual Thinking">
 				</header>
 				<div class="service-content">
 					<div class="service-description service-description1">
-						<h3 class="service-description-title">SERVICO 1</h3>
+						<h3 class="service-description-title">Innovación</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
 					</div>
 					<div class="service-description service-description2">
-						<h3 class="service-description-title">SERVICO 2</h3>
+						<h3 class="service-description-title">Capacitación Inhouse</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
 					</div>
 					<div class="service-description service-description3">
-						<h3 class="service-description-title">SERVICO 3</h3>
+						<h3 class="service-description-title">Coaching Líderes</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
 					</div>
 					<div class="service-description service-description4">
-						<h3 class="service-description-title">SERVICO 4</h3>
+						<h3 class="service-description-title">Facilitadores Certificados</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
+					</div>
+					<div class="service-description service-description5">
+						<h3 class="service-description-title">Transformación Cultural</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
+					</div>
+					<div class="service-description service-description6">
+						<h3 class="service-description-title">Visual Thinking</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
 					</div>
 					<div class="service-contact">
@@ -164,26 +202,6 @@
 
 			</div>
 		</div>
-		
-		<script>
-			var modal = document.getElementById("service-modal");
-			var close = document.getElementsByClassName("close")[0];
-			function showModal(className){
-				modal.classList.add('active')
-				modal.classList.add(className)
-				document.querySelector('body').classList.add('modal-open')
-			}
-			function hideModal(){
-				modal.className = 'modal'
-				document.querySelector('body').classList.remove('modal-open')
-			}
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					hideModal()
-				}
-			}
-		</script>
-
 		<footer>
 			<div class="container">
 				<div class="container-top">
@@ -201,12 +219,11 @@
 					<div class="content-middle">
 						<p class="footer-title">Enlaces</p>
 						<ul>
-							<li><a href="">Inicio</a></li>
-							<li><a href="">Quienes somos</a></li>
-							<li><a href="">Servicios</a></li>
-							<li><a href="">Clientes</a></li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Contacto</a></li>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="quienes-somos.html">Quienes somos</a></li>
+							<li><a href="servicios.html">Servicios</a></li>
+							<li><a href="https://medium.com/dh-corp-test">Blog</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
 						</ul>
 					</div>
 					<div class="content-right">
@@ -243,6 +260,24 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
         <script src="https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js"></script>
 		<script src="script/menu.js"></script>
+		<script>
+			var modal = document.getElementById("service-modal");
+			var close = document.getElementsByClassName("close")[0];
+			function showModal(className){
+				modal.classList.add('active')
+				modal.classList.add(className)
+				document.querySelector('body').classList.add('modal-open')
+			}
+			function hideModal(){
+				modal.className = 'modal'
+				document.querySelector('body').classList.remove('modal-open')
+			}
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					hideModal()
+				}
+			}
+		</script>
         <script>
 			new Vue({
 				el: '#example',

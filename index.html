@@ -4,15 +4,15 @@
 		<meta charset="utf-8">
 		<title>DH Corp | Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
 		<link rel="stylesheet" href="style/slider.css">
+		<link rel="stylesheet" href="style/all.css">
 		<link rel="stylesheet" href="style/animation.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
 	</head>
 	<body>
 		<nav>
-			<a href="" class="brand">
+			<a href="index.html" class="brand">
 				<img src="assets/images/icons/brand.png" alt="DH Corp">
 			</a>
 			<ul class="list-items">
@@ -33,7 +33,17 @@
 				<li><a href="contacto.html">CONTACTO</a></li>         
 			</ul>
 		</nav>
-		<!-- <div class="social-network"></div> -->
+		<div class="social-network">
+			<a href="#">
+				<img src="assets/images/icons/sn-facebook.png" alt="DH Corp Facebook">
+			</a>
+			<a href="#">
+				<img src="assets/images/icons/sn-twitter.png" alt="DH Corp Twitter">
+			</a>
+			<a href="#">
+				<img src="assets/images/icons/sn-instagram.png" alt="DH Corp Instagram">
+			</a>
+		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -41,7 +51,7 @@
 						<div class="content-left">
 							<div class="line"></div>
 							<h3>Las organizaciones florecen con <span class="font-bold">colaboradores que confían</span> y tienen claro el propósito.</h3>
-							<a href="#">Descubre cómo <span class="plus">+</span></a>
+							<a href="servicios.html">Descubre cómo <span class="plus">+</span></a>
 						</div>
 						<div class="content-right" style="background-image: url('assets/images/background/bg-home1.png')"></div>
 					</div>
@@ -51,7 +61,7 @@
 						<div class="content-left">
 							<div class="line"></div>
 							<h3>Sabemos cómo <span class="font-bold">modelar el comportamiento</span> humano para crear equipos exitosos.</h3>
-							<a href="#">Descubre cómo <span class="plus">+</span></a>
+							<a href="servicios.html">Descubre cómo <span class="plus">+</span></a>
 						</div>
 						<div class="content-right" style="background-image: url('assets/images/background/bg-home2.png')"></div>
 					</div>
@@ -61,7 +71,7 @@
 						<div class="content-left">
 							<div class="line"></div>
 							<h3>Nuestro trabajo se basa en <span class="font-bold">tecnología social</span> y <span class="font-bold">digital</span> para organizaciones que apuntan al futuro.</h3>
-							<a href="#">Descubre cómo <span class="plus">+</span></a>
+							<a href="servicios.html">Descubre cómo <span class="plus">+</span></a>
 						</div>
 						<div class="content-right" style="background-image: url('assets/images/background/bg-home3.png')"></div>
 					</div>
@@ -71,15 +81,20 @@
 		</div>
 		<div class="animation-container">
 			<div class="thinkings">
-				<a href="" class="thinking implicit">Llámame</a>
-				<a href="" class="thinking explicit">Agenda una reunión</a>
-				<a href="" class="thinking implicit">Conócenos</a>
+				<a href="contacto.html" class="thinking implicit hide-desktop">Llámame</a>
+				<a href="contacto.html" class="thinking explicit">Agenda una reunión</a>
+				<a href="servicios.html" class="thinking implicit">Conócenos</a>
 			</div>
-			<img  class="character" src="./assets/images/oso_sabio.png" alt="">
+			<img class="character" src="./assets/images/oso_sabio.png" alt="DH Corp Oso">
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
 		<script src="script/slider.js"></script>
 		<script src="script/menu.js"></script>
+		<script>
+			$('.character').click(function() {
+                $('.thinkings').css('visibility','visible');
+            });
+		</script>
 	</body>
 </html>
