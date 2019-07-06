@@ -16,7 +16,7 @@
 }
 
 .animation-container .character {
-  max-width: 120px;
+  max-width: 150px;
   margin-top: 15px;
   -webkit-animation-name: meditation;
           animation-name: meditation;
@@ -44,7 +44,7 @@
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  height: 230px;
+  height: 260px;
 }
 
 .animation-container .thinkings .thinking {
