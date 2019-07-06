@@ -1,6 +1,6 @@
 .animation-container {
   position: fixed;
-  bottom: 1.5em;
+  bottom: 0.5em;
   right: 0;
   z-index: 1000;
   display: -webkit-box;
@@ -16,7 +16,7 @@
 }
 
 .animation-container .character {
-  max-width: 90px;
+  max-width: 120px;
   margin-top: 15px;
   -webkit-animation-name: meditation;
           animation-name: meditation;
@@ -27,13 +27,24 @@
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   cursor: pointer;
+  position: absolute;
+  bottom: 0;
+}
+
+.animation-container .first {
+  opacity: 1;
+}
+
+.animation-container .second {
+  opacity: 0;
 }
 
 .animation-container .thinkings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: hidden;
+  opacity: 0;
+  height: 230px;
 }
 
 .animation-container .thinkings .thinking {
@@ -91,12 +102,12 @@
 }
 
 .animation-container .thinkings .thinking:nth-of-type(1) {
-  -webkit-transform: rotate(-45deg) translate(-45px, 50px);
-          transform: rotate(-45deg) translate(-45px, 50px);
+  -webkit-transform: rotate(-55deg) translate(-70px, 60px);
+          transform: rotate(-55deg) translate(-70px, 60px);
 }
 
 .animation-container .thinkings .thinking:last-child {
-  -webkit-transform: rotate(45deg) translate(45px, 50px);
-          transform: rotate(45deg) translate(45px, 50px);
+  -webkit-transform: rotate(55deg) translate(70px, 60px);
+          transform: rotate(55deg) translate(70px, 60px);
 }
 /*# sourceMappingURL=animation.css.map */

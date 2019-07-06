@@ -85,7 +85,8 @@
 				<a href="contacto.html" class="thinking explicit">Agenda una reunión</a>
 				<a href="servicios.html" class="thinking explicit">Conócenos</a>
 			</div>
-			<img class="character" src="./assets/images/oso_sabio.png" alt="DH Corp Oso">
+			<img class="character first" src="./assets/images/oso_sabio1.png" alt="DH Corp Oso">
+			<img class="character second" src="./assets/images/oso_sabio2.png" alt="DH Corp Oso">
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
@@ -93,7 +94,15 @@
 		<script src="script/menu.js"></script>
 		<script>
 			$('.character').click(function() {
-                $('.thinkings').css('visibility','visible');
+				$('.thinkings').animate({
+					opacity:1                   
+				},2000);
+				$('.second').animate({
+					opacity:1                   
+				},4000);
+				$('.first').animate({
+					opacity:0                 
+				},4000);
             });
 		</script>
 	</body>
