@@ -662,7 +662,6 @@ ul#menu li a {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  opacity: 0.5;
 }
 
 @media screen and (max-width: 800px) {
@@ -688,11 +687,22 @@ ul#menu li a {
   padding: 0.21em;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  opacity: 0.1;
 }
 
 .swiper-container .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
   right: 52%;
   top: 95%;
+}
+
+.swiper-container span.swiper-pagination-bullet:last-child:after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background-color: #b3a0eb !important;
+  position: absolute;
+  opacity: 1 !important;
+  -webkit-transform: rotate(-45deg) translateX(4px);
+          transform: rotate(-45deg) translateX(4px);
+  bottom: -11px;
 }
 /*# sourceMappingURL=slider.css.map */
