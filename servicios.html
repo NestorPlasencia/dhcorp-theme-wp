@@ -16,7 +16,7 @@
 			</a>
 			<ul class="list-items">
 				<li><a href="index.html">INICIO</a></li>
-				<li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+				<li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
 				<li><a href="servicios.html" class="active">SERVICIOS</a></li>
 				<li><a href="https://medium.com/dh-corp-test">BLOG</a></li>
 				<li><a href="contacto.html">CONTACTO</a></li>
@@ -26,101 +26,107 @@
 			<h3 id="menu-toggle"></h3>
 			<ul id="menu">
 				<li><a href="index.html">INICIO</a></li>
-				<li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+				<li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
 				<li><a href="servicios.html">SERVICIOS</a></li>
 				<li><a href="https://medium.com/dh-corp-test">BLOG</a></li>
 				<li><a href="contacto.html">CONTACTO</a></li>         
 			</ul>
 		</nav>
 		<section id="servicios">
-			<div id="example">
-				<carousel-3d :controls-visible="true" :clickable="false" :width="700" :height="500" :display="3" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'">
-					<slide :index="0">
-						<figure>
-							<img src="assets/images/background/bg-innovacion.png">
-							<figcaption>
-								<div class="description">
-									<h2>Innovación</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service1')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-					<slide :index="1">
-						<figure>
-							<img src="assets/images/background/bg-capacitacion_inhouse.png">
-							<figcaption>
-								<div class="description">
-									<h2>Capacitación Inhouse</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service2')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-					<slide :index="2">
-						<figure>
-							<img src="assets/images/background/bg-coaching_lideres.png">
-							<figcaption>
-								<div class="description">
-									<h2>Coaching Líderes</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service3')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-					<slide :index="3">
-						<figure>
-							<img src="assets/images/background/bg-facilitadores_ certificados.png">
-							<figcaption>
-								<div class="description">
-									<h2>Facilitadores Certificados</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service4')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-					<slide :index="4">
-						<figure>
-							<img src="assets/images/background/bg-transformacion_ cultural.png">
-							<figcaption>
-								<div class="description">
-									<h2>Transformación Cultural</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service5')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-					<slide :index="5">
-						<figure>
-							<img src="assets/images/background/bg-visual_thinking.png">
-							<figcaption>
-								<div class="description">
-									<h2>Visual Thinking</h2>
-									<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
-								</div>
-								<div class="button">
-									<button onclick="showModal('modal-service6')">Ver mas</button>
-								</div>
-							</figcaption>
-						</figure>
-					</slide>
-				</carousel-3d>
-			</div>			  
+			<div class="servicios-upper">
+				<h2>NUESTROS SERVICIOS</h2>
+				<p>¡Descubre lo que tu empresa y equipo necesita!</p>
+			</div>
+			<div class="servicios-container">
+				<div id="example">
+					<carousel-3d :controls-visible="true" :clickable="false" :width="700" :height="450" :display="3" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'">
+						<slide :index="0">
+							<figure>
+								<img src="assets/images/background/bg-innovacion.png">
+								<figcaption>
+									<div class="description">
+										<h2>Innovación</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service1')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+						<slide :index="1">
+							<figure>
+								<img src="assets/images/background/bg-capacitacion_inhouse.png">
+								<figcaption>
+									<div class="description">
+										<h2>Capacitación Inhouse</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service2')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+						<slide :index="2">
+							<figure>
+								<img src="assets/images/background/bg-coaching_lideres.png">
+								<figcaption>
+									<div class="description">
+										<h2>Coaching Líderes</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service3')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+						<slide :index="3">
+							<figure>
+								<img src="assets/images/background/bg-facilitadores_ certificados.png">
+								<figcaption>
+									<div class="description">
+										<h2>Facilitadores Certificados</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service4')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+						<slide :index="4">
+							<figure>
+								<img src="assets/images/background/bg-transformacion_ cultural.png">
+								<figcaption>
+									<div class="description">
+										<h2>Transformación Cultural</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service5')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+						<slide :index="5">
+							<figure>
+								<img src="assets/images/background/bg-visual_thinking.png">
+								<figcaption>
+									<div class="description">
+										<h2>Visual Thinking</h2>
+										<p>All Smiles for One-on-One Product Expert Time. All Smiles for One-on-One Product Expert Time</p>
+									</div>
+									<div class="button">
+										<button onclick="showModal('modal-service6')">VER MÁS</button>
+									</div>
+								</figcaption>
+							</figure>
+						</slide>
+					</carousel-3d>
+				</div>	
+			</div>		  
 		</section>
 
 		<div id="service-modal" class="modal">
@@ -160,41 +166,36 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet. Eget duis at tellus at urna condimentum. Sem integer vitae justo eget magna fermentum iaculis. Vitae sapien pellentesque.</p>
 					</div>
 					<div class="service-contact">
+						<h4>¿Agendamos una reunión?</h4>
 						<form action="">
 							<div class="form-columns">
 								<div>
-									<label>Nombre</label>
-									<input type="text">
+									<label>Nombre*</label>
+									<input type="text" required>
 								</div>
 								<div>
-									<label>Celular</label>
-									<input type="text">
+									<label>Celular*</label>
+									<input type="number" required>
 								</div>
 								<div>
-									<label>Apellido</label>
-									<input type="text">
+									<label>Email*</label>
+									<input type="email" required>
 								</div>
 								<div>
-									<label>Código Postal</label>
-									<input type="text">
-								</div>
-								<div>
-									<label>Email</label>
-									<input type="text">
-								</div>
-								<div>
-									<label>País</label>
-									<input type="text">
+									<label>Tipo de cita*</label>
+									<select name="cita" id="cita">
+										<option value="virtual">Virtual</option>
+										<option value="presencial">Presencial</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-textarea">
-								<label>Mensaje</label>
-								<textarea rows="2"></textarea>
+								<label>Mensaje*</label>
+								<textarea rows="2" required></textarea>
 							</div>
 							<div class="text-center">
 								<button>Enviar mensaje</button>
 								<p>¿Quieres conversar con uno de nuestros asesores de servicio? Llama al (1) 460 5443</p>
-								<span class="smaller">@2019 DH</span>
 							</div>
 						</form>
 					</div>
@@ -220,7 +221,7 @@
 						<p class="footer-title">Enlaces</p>
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
-							<li><a href="quienes-somos.html">Quienes somos</a></li>
+							<li><a href="quienes-somos.html">Quiénes somos</a></li>
 							<li><a href="servicios.html">Servicios</a></li>
 							<li><a href="https://medium.com/dh-corp-test">Blog</a></li>
 							<li><a href="contacto.html">Contacto</a></li>

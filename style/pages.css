@@ -497,87 +497,6 @@ section#contact .wrapper .wrapper-body {
   padding: 40px 25px 30px;
 }
 
-section#contact .wrapper .wrapper-body form .form-columns {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
-  grid-gap: 15px 25px;
-}
-
-section#contact .wrapper .wrapper-body form label {
-  color: #a6a6a6;
-  font-size: 13px;
-  font-weight: 300;
-  display: block;
-}
-
-section#contact .wrapper .wrapper-body form input,
-section#contact .wrapper .wrapper-body form textarea {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid #a6a6a6;
-  font-size: 13px;
-  padding: 5px 0;
-  outline: transparent;
-  width: 100%;
-  resize: none;
-}
-
-section#contact .wrapper .wrapper-body form .form-textarea {
-  margin-top: 15px;
-}
-
-section#contact .wrapper .wrapper-body form .text-center {
-  text-align: center;
-}
-
-section#contact .wrapper .wrapper-body form .text-center button {
-  background-color: #3f9fff;
-  padding: 8px 40px;
-  margin: 30px 0 20px;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border: 0;
-}
-
-section#contact .wrapper .wrapper-body form .text-center p {
-  color: #a6a6a6;
-  max-width: 280px;
-  margin: 0 auto 20px;
-  font-size: 14px;
-}
-
-section#contact .wrapper .wrapper-body form .text-center span.smaller {
-  color: #a6a6a6;
-  font-size: 11px;
-  margin-top: 20px;
-}
-
-section#contact .wrapper .wrapper-body form select {
-  width: 100%;
-  background-color: #ccc0f1;
-  background-position: 96% center;
-  background-repeat: no-repeat;
-  background-size: 8px;
-  background-image: url("../assets/images/icons/arrow.png");
-  color: #301e79;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 13px;
-  -webkit-appearance: button;
-  border-radius: 5px;
-  padding: 2px 7px;
-  margin-top: 7px;
-  border: 0;
-}
-
-section#contact .wrapper .wrapper-body form select:focus {
-  outline: none;
-}
-
 section#quienes-somos .container {
   display: -ms-grid;
   display: grid;
@@ -653,126 +572,9 @@ section#quienes-somos .container .content-right .clients img {
           filter: grayscale(1);
 }
 
-section#clientes .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.3fr;
-      grid-template-columns: 1fr 1.3fr;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-section#clientes .container .left-content {
-  padding: 120px 2.5em 60px;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container .left-content {
-    text-align: center;
-  }
-}
-
-section#clientes .container .left-content img {
-  width: 180px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-section#clientes .container .left-content h2 {
-  color: #301e79;
-  font-weight: 900;
-  font-size: 35px;
-  letter-spacing: -0.01em;
-  line-height: 1em;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container .left-content h2 {
-    font-size: 28px;
-  }
-}
-
-section#clientes .container .left-content .position {
-  font-size: 12px;
-  margin: 0;
-  color: #706f6f;
-}
-
-section#clientes .container .left-content .description {
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 1.5em;
-  text-align: justify;
-  color: #706f6f;
-}
-
-section#clientes .container .right-content {
-  padding: 200px 0 70px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container .right-content {
-    border-left: 0;
-    height: 100%;
-    padding: 0 30px 30px;
-  }
-}
-
-section#clientes .container .right-content .brands {
-  border-left: 1px solid #6a4eba;
-  height: 100%;
-  padding: 80px 30px 40px;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container .right-content .brands {
-    border-left: 0;
-    height: 100%;
-    padding: 0px;
-  }
-}
-
-section#clientes .container .right-content .brands h3 {
-  color: #706f6f;
-  font-weight: 900;
-  font-size: 25px;
-  letter-spacing: -0.01em;
-  line-height: 1em;
-}
-
-@media screen and (max-width: 800px) {
-  section#clientes .container .right-content .brands h3 {
-    font-size: 17px;
-  }
-}
-
-section#clientes .container .right-content .brands .columns {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  margin-top: 20px;
-}
-
-section#clientes .container .right-content .brands .columns .logo {
-  height: 40px;
-  width: 100%;
-  background-color: #a6a6a6;
-  opacity: 0.5;
-}
-
 section#servicios {
-  max-width: 1250px;
-  margin: 0 auto 100px;
-  padding-top: 150px;
+  padding: 150px 0 100px;
+  background-image: url(../assets/images/background/bg-servicios.png);
 }
 
 @media screen and (max-width: 800px) {
@@ -782,6 +584,29 @@ section#servicios {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+section#servicios .servicios-upper {
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+section#servicios .servicios-upper h2 {
+  color: #6a4eba;
+  font-weight: 900;
+  font-size: 2.3em;
+  letter-spacing: -0.01em;
+}
+
+section#servicios .servicios-upper p {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+section#servicios .servicios-container {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 section#servicios .carousel-3d-container {
@@ -811,7 +636,7 @@ section#servicios .carousel-3d-container figcaption .description {
 section#servicios .carousel-3d-container figcaption .description h2 {
   color: #6a4eba;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: -0.01em;
   line-height: 1em;
 }
@@ -824,6 +649,7 @@ section#servicios .carousel-3d-container figcaption .description h2 {
 
 section#servicios .carousel-3d-container figcaption .description p {
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -839,12 +665,12 @@ section#servicios .carousel-3d-container figcaption .button {
 }
 
 section#servicios .carousel-3d-container figcaption .button button {
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 15px;
-  padding: 10px 30px;
-  color: #301e79;
+  padding: 12px 30px 10px;
+  color: #ffffff;
   border: 2px solid #301e79;
-  background-color: #ffffff;
+  background-color: #301e79;
   font-weight: 600;
   cursor: pointer;
 }
@@ -873,7 +699,7 @@ section#servicios .next span {
 }
 
 section#servicios a.next {
-  right: 30px;
+  right: 38px;
 }
 
 body.modal-open {
@@ -929,6 +755,9 @@ body.modal-open {
   width: 100%;
   height: auto;
   display: none;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .modal .modal-content .service-content {
@@ -944,8 +773,30 @@ body.modal-open {
   display: none;
 }
 
+.modal .modal-content .service-content .service-description h3 {
+  color: #301e79;
+  font-weight: 900;
+  font-size: 2em;
+  letter-spacing: -0.01em;
+}
+
+.modal .modal-content .service-content .service-description p {
+  color: #343434;
+  font-weight: 300;
+  font-size: 1em;
+}
+
 .modal .modal-content .service-content .service-contact {
-  padding-left: 20px;
+  padding: 15px 0 10px 20px;
+  border-left: 1px solid #ccc;
+}
+
+.modal .modal-content .service-content .service-contact h4 {
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  color: #301e79;
+  font-weight: 900;
+  letter-spacing: -0.3px;
 }
 
 .modal-service1 .modal-content .service-hero img.hero-service1,
@@ -966,5 +817,91 @@ body.modal-open {
 .modal-service4 .modal-content .service-hero img.hero-service4,
 .modal-service4 .modal-content .service-content .service-description4 {
   display: block;
+}
+
+.carousel-3d-slider {
+  -webkit-perspective: 650px !important;
+          perspective: 650px !important;
+}
+
+form .form-columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  grid-gap: 15px 25px;
+}
+
+form label {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
+
+form input,
+form textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #a6a6a6;
+  font-size: 13px;
+  padding: 5px 0;
+  outline: transparent;
+  width: 100%;
+  resize: none;
+}
+
+form .form-textarea {
+  margin-top: 15px;
+}
+
+form .text-center {
+  text-align: center;
+}
+
+form .text-center button {
+  background-color: #3f9fff;
+  padding: 8px 40px;
+  margin: 30px 0 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+form .text-center p {
+  color: #a6a6a6;
+  max-width: 280px;
+  margin: 0 auto 20px;
+  font-size: 13px;
+}
+
+form .text-center span.smaller {
+  color: #a6a6a6;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+form select {
+  width: 100%;
+  background-color: #ccc0f1;
+  background-position: 96% center;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-image: url("../assets/images/icons/arrow.png");
+  color: #301e79;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  -webkit-appearance: button;
+  border-radius: 5px;
+  padding: 2px 7px;
+  margin-top: 7px;
+  border: 0;
+}
+
+form select:focus {
+  outline: none;
 }
 /*# sourceMappingURL=pages.css.map */
