@@ -819,6 +819,16 @@ body.modal-open {
   display: block;
 }
 
+.modal-service5 .modal-content .service-hero img.hero-service5,
+.modal-service5 .modal-content .service-content .service-description5 {
+  display: block;
+}
+
+.modal-service6 .modal-content .service-hero img.hero-service6,
+.modal-service6 .modal-content .service-content .service-description6 {
+  display: block;
+}
+
 .carousel-3d-slider {
   -webkit-perspective: 650px !important;
           perspective: 650px !important;
