@@ -567,7 +567,7 @@ section#quienes-somos .container .content-right .clients {
 
 section#quienes-somos .container .content-right .clients img {
   max-height: 35px;
-  margin: 10px 5px;
+  margin: 10px 20px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
@@ -755,7 +755,7 @@ body.modal-open {
   width: 100%;
   height: auto;
   display: none;
-  max-height: 400px;
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -780,7 +780,7 @@ body.modal-open {
   letter-spacing: -0.01em;
 }
 
-.modal .modal-content .service-content .service-description p {
+.modal .modal-content .service-content .service-description p, .modal .modal-content .service-content .service-description li {
   color: #343434;
   font-weight: 300;
   font-size: 1em;
