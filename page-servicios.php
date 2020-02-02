@@ -18,12 +18,12 @@
 			<?php
 				if ( isset($_GET['sent']) ){
 					if ( $_GET['sent'] == '1'){
-						echo "<p> ✔ Formulario enviado correctamente</p><br>";
+						echo '<p class="alert alert-success active">Formulario enviado correctamente</p><br>';
 					}
 					else {
-						echo "<p> Hubo un error al enviar</p><br>";
-						echo $_GET['sent'];
+						echo '<p class="alert alert-danger active"> Hubo un error al enviar</p><br>';
 					}
+					echo '<script>setTimeout(function(){ document.querySelector(".alert.active").classList.remove("active"); }, 2500);</script>';
 				}
 			?>
 			<div class="servicios-container">
@@ -98,11 +98,14 @@
 					<img class="hero" src="<?php echo $url;?>" alt="<?php the_title(); ?>">
 				</header>
 				<div class="service-content">
-						<div class="service-description <?php echo get_field('description_class')?>">
-							<h3 class="service-description-title"><?php the_title(); ?></h3>
-							<?php the_content(); ?>
-						</div>
-					<?php include('c-contact.php'); ?>
+					<div class="service-description <?php echo get_field('description_class')?>">
+						<h3 class="service-description-title"><?php the_title(); ?></h3>
+						<?php the_content(); ?>
+					</div>
+					<div class="service-contact">
+						<h4>¿Agendamos una reunión?</h4>		
+						<?php include('c-contact.php'); ?>
+					</div>
 				</div>
 			</div>
 			<?php endwhile; wp_reset_query(); ?>
