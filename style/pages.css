@@ -595,12 +595,15 @@ section#quienes-somos .container .content-right .clients img {
 section#servicios {
   padding: 150px 0 100px;
   background-image: url(../assets/images/background/bg-servicios.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 800px) {
   section#servicios {
     margin: 0 auto;
     padding-top: 100px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -654,13 +657,43 @@ section#servicios .servicios-container {
   }
 }
 
-section#servicios .servicios-container-mobile .card-mobile {
+section#servicios .servicios-container-mobile .mobile-card {
   background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
-section#servicios .servicios-container-mobile .card-mobile img {
+section#servicios .servicios-container-mobile .mobile-card img {
   max-width: 100%;
   height: auto;
+}
+
+section#servicios .servicios-container-mobile .mobile-card figcaption {
+  padding: 15px;
+}
+
+section#servicios .servicios-container-mobile .mobile-card figcaption h2 {
+  font-size: 18px;
+  color: #301e79;
+}
+
+section#servicios .servicios-container-mobile .mobile-card figcaption p {
+  font-size: 13px;
+}
+
+section#servicios .servicios-container-mobile .mobile-card figcaption .button {
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+section#servicios .servicios-container-mobile .mobile-card figcaption .button button {
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 10px 25px 8px;
+  color: #ffffff;
+  border: 2px solid #301e79;
+  background-color: #301e79;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 section#servicios .carousel-3d-container {
@@ -789,6 +822,12 @@ body.modal-open {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .modal .modal-content {
+    width: 90%;
+  }
+}
+
 .modal .modal-content .close {
   position: absolute;
   top: 0.25em;
@@ -805,12 +844,25 @@ body.modal-open {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .modal .modal-content .close {
+    top: 0px;
+    right: 15px;
+  }
+}
+
 .modal .modal-content .service-hero img.hero {
   width: 100%;
   height: auto;
   max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-hero img.hero {
+    display: none;
+  }
 }
 
 .modal .modal-content .service-content {
@@ -820,9 +872,22 @@ body.modal-open {
   padding: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-content {
+    padding: 20px;
+  }
+}
+
 .modal .modal-content .service-content .service-description {
   width: 70%;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-content .service-description {
+    width: 100%;
+    padding-right: 0px;
+  }
 }
 
 .modal .modal-content .service-content .service-description h3 {
@@ -832,15 +897,34 @@ body.modal-open {
   letter-spacing: -0.01em;
 }
 
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-content .service-description h3 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}
+
 .modal .modal-content .service-content .service-description p, .modal .modal-content .service-content .service-description li {
   color: #343434;
   font-weight: 300;
   font-size: 1em;
 }
 
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-content .service-description p, .modal .modal-content .service-content .service-description li {
+    font-size: 14px;
+  }
+}
+
 .modal .modal-content .service-content .service-contact {
   padding: 15px 0 10px 20px;
   border-left: 1px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .modal .modal-content .service-content .service-contact {
+    display: none;
+  }
 }
 
 .modal .modal-content .service-content .service-contact h4 {
