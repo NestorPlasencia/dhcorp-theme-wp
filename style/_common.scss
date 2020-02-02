@@ -78,8 +78,10 @@ nav {
 	align-items: center;
 	
 	@media screen and (max-width: 767px) {
-		background-color: transparent;
 		padding: 0;
+		padding-bottom: 8px;
+		position: fixed;
+		width: 100%;
 	}
 
 	a.brand {
@@ -347,15 +349,14 @@ footer {
 }
 
 ul#menu {
-    padding: 60px 20px 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 80px 20px 0;
+    margin: 0;
 	background-color: $purple-light;
 	bottom: 0;
 	top: 0;
-	text-align: right;
 	height: 100vh;
-	width: 150px;
+	width: 100%;
+	text-align: center;
 	
 	li {
 		padding: 3px 0;
@@ -372,9 +373,9 @@ ul#menu {
 			padding: 10px 0;
 			display: inline-block;
 
-			@media screen and (max-width: 800px) {
-				font-size: 14px;
-				padding: 0;
+			@media screen and (max-width: 767px) {
+				font-size: 16px;
+				padding: 10px;
 			}
 		}
 	}

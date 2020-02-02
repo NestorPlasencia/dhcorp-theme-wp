@@ -82,8 +82,10 @@ nav {
 
 @media screen and (max-width: 767px) {
   nav {
-    background-color: transparent;
     padding: 0;
+    padding-bottom: 8px;
+    position: fixed;
+    width: 100%;
   }
 }
 
@@ -375,15 +377,14 @@ footer .container .container-bottom .content-right span {
 }
 
 ul#menu {
-  padding: 60px 20px 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 80px 20px 0;
+  margin: 0;
   background-color: #6a4eba;
   bottom: 0;
   top: 0;
-  text-align: right;
   height: 100vh;
-  width: 150px;
+  width: 100%;
+  text-align: center;
 }
 
 ul#menu li {
@@ -405,10 +406,10 @@ ul#menu li a {
   display: inline-block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   ul#menu li a {
-    font-size: 14px;
-    padding: 0;
+    font-size: 16px;
+    padding: 10px;
   }
 }
 
@@ -487,13 +488,19 @@ section#contact {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10px;
+  padding: 20px;
 }
 
 section#contact .wrapper {
   max-width: 500px;
   margin: 0 auto;
   padding: 160px 0 100px;
+}
+
+@media screen and (max-width: 767px) {
+  section#contact .wrapper {
+    padding: 110px 0 30px;
+  }
 }
 
 section#contact .wrapper .wrapper-header {
@@ -511,6 +518,12 @@ section#contact .wrapper .wrapper-header {
   /* IE6-9 */
 }
 
+@media screen and (max-width: 767px) {
+  section#contact .wrapper .wrapper-header {
+    padding: 15px 0;
+  }
+}
+
 section#contact .wrapper .wrapper-header h2 {
   color: #ffffff;
   font-size: 30px;
@@ -518,9 +531,21 @@ section#contact .wrapper .wrapper-header h2 {
   letter-spacing: .5px;
 }
 
+@media screen and (max-width: 767px) {
+  section#contact .wrapper .wrapper-header h2 {
+    font-size: 22px;
+  }
+}
+
 section#contact .wrapper .wrapper-body {
   background-color: #ffffff;
   padding: 40px 25px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  section#contact .wrapper .wrapper-body {
+    padding: 30px 25px 10px;
+  }
 }
 
 section#quienes-somos .container {
@@ -539,6 +564,10 @@ section#quienes-somos .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 0;
+    padding: 100px 20px 30px;
+  }
+  section#quienes-somos .container p {
+    font-size: 14px;
   }
 }
 
@@ -549,9 +578,21 @@ section#quienes-somos .container h2 {
   letter-spacing: -0.01em;
 }
 
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container h2 {
+    font-size: 22px;
+  }
+}
+
 section#quienes-somos .container .content-left {
   padding: 27px;
   background-color: #e4ddf2;
+}
+
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container .content-left {
+    padding: 20px;
+  }
 }
 
 section#quienes-somos .container .content-left img {
@@ -563,6 +604,14 @@ section#quienes-somos .container .content-right {
   padding-left: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container .content-right {
+    border: 0;
+    padding: 0;
+    margin-top: 15px;
+  }
+}
+
 section#quienes-somos .container .content-right iframe {
   width: 100%;
   height: 60vh;
@@ -570,6 +619,13 @@ section#quienes-somos .container .content-right iframe {
   padding-bottom: 25px;
   margin-bottom: 7px;
   border-bottom: 1px solid #301e79;
+}
+
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container .content-right iframe {
+    min-height: 250px;
+    max-height: 350px;
+  }
 }
 
 section#quienes-somos .container .content-right .clients {
@@ -591,6 +647,13 @@ section#quienes-somos .container .content-right .clients {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container .content-right .clients {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 section#quienes-somos .container .content-right .clients img {
   max-height: 35px;
   margin: 10px 20px;
@@ -598,92 +661,84 @@ section#quienes-somos .container .content-right .clients img {
           filter: grayscale(1);
 }
 
-section#post-list {
-  background-color: #f3f3f3;
-}
-
-section#post-list .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  padding: 130px 20px 50px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1000px) {
-  section#post-list .container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+@media screen and (max-width: 767px) {
+  section#quienes-somos .container .content-right .clients img {
+    max-height: 30px;
+    margin: 5px 15px;
   }
 }
 
+section#post .container {
+  padding: 150px 20px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
-  section#post-list .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 20px;
+  section#post .container {
     max-width: 600px;
     padding: 100px 20px 50px;
   }
 }
 
-section#post-list .container article {
-  background-color: #ffffff;
-}
-
-section#post-list .container article a {
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-}
-
-section#post-list .container article a img {
+section#post .container img {
   width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
+  margin: 30px 0;
 }
 
-section#post-list .container article a .content {
-  padding: 15px;
-}
-
-section#post-list .container article a .content h2 {
+section#post .container article h1 {
   color: #301e79;
   font-weight: 900;
-  font-size: 22px;
-}
-
-section#post-list .container article a .content p {
-  color: #1b2632;
-  font-size: 15px;
-}
-
-section#post-list .container article a .content time {
-  color: #a6a6a6;
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-section#post-list .container article a .content .center {
+  font-size: 2.3em;
   text-align: center;
 }
 
-section#post-list .container article a .content .center .button {
-  border-radius: 10px;
+@media screen and (max-width: 767px) {
+  section#post .container article h1 {
+    font-size: 30px;
+  }
+}
+
+section#post .container article time {
+  color: #a6a6a6;
+  margin: 10px;
   font-size: 14px;
-  padding: 10px 25px 8px;
-  color: #ffffff;
-  border: 2px solid #301e79;
-  background-color: #301e79;
-  font-weight: 600;
-  cursor: pointer;
-  display: inline-block;
-  margin: 5px 0;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  section#post .container article time {
+    font-size: 12px;
+  }
+}
+
+section#post .container article p {
+  color: #1b2632;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  section#post .container article p {
+    font-size: 14px;
+  }
+}
+
+section#post .container article .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#post .container article .buttons a {
+  text-decoration: none;
+  color: #6a4eba;
 }
 
 section#servicios {
@@ -712,6 +767,12 @@ section#servicios {
 section#servicios .servicios-upper {
   margin-bottom: 3em;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  section#servicios .servicios-upper {
+    margin-bottom: 30px;
+  }
 }
 
 section#servicios .servicios-upper h2 {
@@ -968,6 +1029,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .modal .modal-content .service-content {
+    display: block;
     padding: 20px;
   }
 }
@@ -1017,7 +1079,9 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .modal .modal-content .service-content .service-contact {
-    display: none;
+    padding: 0;
+    border: 0;
+    margin-top: 40px;
   }
 }
 
@@ -1081,6 +1145,13 @@ form .form-columns {
   -ms-grid-columns: 1.5fr 1fr;
       grid-template-columns: 1.5fr 1fr;
   grid-gap: 15px 25px;
+}
+
+@media screen and (max-width: 767px) {
+  form .form-columns {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 form label {

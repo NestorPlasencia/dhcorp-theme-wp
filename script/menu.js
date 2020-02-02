@@ -44,5 +44,5 @@ $.fn.extend({
     }
 });
 
-$('#menu-toggle').threeBarToggle({color: '#301e79', width: 30, height: 25});
+$('#menu-toggle').threeBarToggle({color: '#ffffff', width: 30, height: 25});
 $('#menu').accordionMenu();
