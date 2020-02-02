@@ -29,7 +29,7 @@ function send_mail_data() {
     $message = sanitize_textarea_field($_POST['message']);
     $cita = $_POST['cita'];
 
-	$adminmail = "nplasencia82@gmail.com"; //email destino
+	$adminmail = "hansgutierrez@dh-facilitadores.org"; //email destino
 	$subject = 'Formulario de contacto'; //asunto
 	$headers = "Reply-to: " . $name . " <" . $email . ">";
 
