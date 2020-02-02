@@ -343,6 +343,35 @@ body.modal-open {
 	}
 } 
 
+
+.alert {
+	position: fixed;
+	padding: .75rem 1.25rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	bottom: 1rem;
+	right: 1rem;
+}
+.alert {
+	visibility: hidden;
+	opacity: 0;
+	transition-duration: 500ms;
+}
+.alert.active {
+	visibility: visible;
+	opacity: 1;
+}
+.alert-danger {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+.alert-success {
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+
 .carousel-3d-slider {
 	perspective: 650px !important;
 }

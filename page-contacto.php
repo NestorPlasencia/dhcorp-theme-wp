@@ -8,50 +8,29 @@
 		<?php wp_head()?>
 	</head>
 	<body>
-		
 		<?php get_header( ); ?>
+		<?php
+			if ( isset($_GET['sent']) ){
+				if ( $_GET['sent'] == '1'){
+					echo '<p class="alert alert-success active">Formulario enviado correctamente</p><br>';
+				}
+				else {
+					echo '<p class="alert alert-danger active"> Hubo un error al enviar</p><br>';
+				}
+				echo '<script>setTimeout(function(){ document.querySelector(".alert.active").classList.remove("active"); }, 2500);</script>';
+			}
+		?>
 		<section id="contact">
 			<div class="wrapper">
 				<div class="wrapper-header">
 					<h2>CONTACTO</h2>
 				</div>
 				<div class="wrapper-body">
-					<form action="">
-						<div class="form-columns">
-							<div>
-								<label>Nombre*</label>
-								<input type="text" required>
-							</div>
-							<div>
-								<label>Celular*</label>
-								<input type="number" required>
-							</div>
-							<div>
-								<label>Email*</label>
-								<input type="email" required>
-							</div>
-							<div>
-								<label>Tipo de cita*</label>
-								<select name="cita" id="cita">
-									<option value="virtual">Virtual</option>
-									<option value="presencial">Presencial</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-textarea">
-							<label>Mensaje*</label>
-							<textarea rows="2" required></textarea>
-						</div>
-						<div class="text-center">
-							<button>Enviar mensaje</button>
-							<p>¿Quieres conversar con uno de nuestros asesores de servicio? Llama al (1) 460 5443</p>
-							<span class="smaller">@2019 DH</span>
-						</div>
-					</form>
+					<?php include('c-contact.php'); ?>
 				</div>
 			</div>
 		</section>
 		<?php get_footer( ); ?>
 
-		</body>
+	</body>
 </html>
