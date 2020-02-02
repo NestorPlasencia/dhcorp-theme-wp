@@ -139,6 +139,10 @@ nav ul.list-items li a.active {
   color: #e5b300;
 }
 
+nav ul.list-items li.current-menu-item a {
+  color: #e5b300;
+}
+
 footer {
   background-color: #121921;
   color: #ffffff;

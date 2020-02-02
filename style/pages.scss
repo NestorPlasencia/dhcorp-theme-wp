@@ -268,7 +268,6 @@ body.modal-open {
 		.service-hero img.hero {
 			width: 100%;
 			height: auto;
-			display: none;
 			max-height: 500px;
 			object-fit: cover;
 		}
@@ -279,7 +278,6 @@ body.modal-open {
 			.service-description {
 				width: 70%;
 				padding-right: 20px;
-				display: none;
 
 				h3 {
 					color: $purple;
@@ -312,30 +310,38 @@ body.modal-open {
 	
 }
 
-.modal-service1 .modal-content .service-hero img.hero-service1,
-.modal-service1 .modal-content .service-content .service-description1 {
-	display: block;
-}
-.modal-service2 .modal-content .service-hero img.hero-service2,
-.modal-service2 .modal-content .service-content .service-description2 {
-	display: block;
-}
-.modal-service3 .modal-content .service-hero img.hero-service3,
-.modal-service3 .modal-content .service-content .service-description3 {
-	display: block;
-}
-.modal-service4 .modal-content .service-hero img.hero-service4,
-.modal-service4 .modal-content .service-content .service-description4 {
-	display: block;
-}
-.modal-service5 .modal-content .service-hero img.hero-service5,
-.modal-service5 .modal-content .service-content .service-description5 {
-	display: block;
-}
-.modal-service6 .modal-content .service-hero img.hero-service6,
-.modal-service6 .modal-content .service-content .service-description6 {
-	display: block;
-}
+// .modal-service1 .modal-content .service-hero img.hero-service1,
+// .modal-service1 .modal-content .service-content .service-description1 {
+// 	display: block;
+// }
+// .modal-service2 .modal-content .service-hero img.hero-service2,
+// .modal-service2 .modal-content .service-content .service-description2 {
+// 	display: block;
+// }
+// .modal-service3 .modal-content .service-hero img.hero-service3,
+// .modal-service3 .modal-content .service-content .service-description3 {
+// 	display: block;
+// }
+// .modal-service4 .modal-content .service-hero img.hero-service4,
+// .modal-service4 .modal-content .service-content .service-description4 {
+// 	display: block;
+// }
+// .modal-service5 .modal-content .service-hero img.hero-service5,
+// .modal-service5 .modal-content .service-content .service-description5 {
+// 	display: block;
+// }
+// .modal-service6 .modal-content .service-hero img.hero-service6,
+// .modal-service6 .modal-content .service-content .service-description6 {
+// 	display: block;
+// }
+
+
+.modal-content{
+	display: none;
+	&.active {
+		display: block;
+	}
+} 
 
 .carousel-3d-slider {
 	perspective: 650px !important;
