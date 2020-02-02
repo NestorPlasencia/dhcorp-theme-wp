@@ -15,6 +15,17 @@
 				<h2>NUESTROS SERVICIOS</h2>
 				<p>¡Descubre lo que tu organización y equipos necesitan!</p>
 			</div>
+			<?php
+				if ( isset($_GET['sent']) ){
+					if ( $_GET['sent'] == '1'){
+						echo "<p> ✔ Formulario enviado correctamente</p><br>";
+					}
+					else {
+						echo "<p> Hubo un error al enviar</p><br>";
+						echo $_GET['sent'];
+					}
+				}
+			?>
 			<div class="servicios-container">
 				<div id="example">
 					<carousel-3d :controls-visible="true" :clickable="false" :width="700" :height="450" :display="3" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'">

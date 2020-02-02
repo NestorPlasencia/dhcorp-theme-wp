@@ -5,7 +5,7 @@
     </a>
 
     <?php wp_nav_menu( array(
-        'theme_location' => 'main',
+        'menu' => 'main',
         'container' => false,
         'menu_class' => 'list-items'
         ));
@@ -15,7 +15,7 @@
 <nav class="menu-mobile">
     <h3 id="menu-toggle"></h3>
     <?php wp_nav_menu( array(
-        'theme_location' => 'main',
+        'menu' => 'main',
         'container' => false,
         'menu_class' => 'list-items',
         'menu_id' => 'menu'
