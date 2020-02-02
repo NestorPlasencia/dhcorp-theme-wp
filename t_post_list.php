@@ -15,7 +15,7 @@ Template Name: Post List
 	</head>
 	<body>
 	<?php get_header( ); ?>	
-		<section class="post-list">
+		<section id="post-list">
 			<div class="container">
 				<?php
 					$loop = new WP_Query( array(
@@ -25,31 +25,21 @@ Template Name: Post List
 					);
 				?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					
-						<article class="post-resume">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-							<h1><?php the_title(); ?></h1>
+					<article class="post-resume">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 							<?php the_post_thumbnail('medium'); ?>
-							<p><?php the_excerpt(); ?></p>
-							<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>	
-							Ver más
-							</a>	
-						</article>
-				
+							<div class="content">
+								<h2><?php the_title(); ?></h2>
+								<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+								<p><?php the_excerpt(); ?></p><div class="center">
+									<p class="button">Ver más</p>
+								</div>
+							</div>
+						</a>	
+					</article>
 				<?php endwhile; wp_reset_query(); ?>
 			</div>
 		</section>
 		<?php get_footer( ); ?>
-		<style>
-			.post-list .container {
-				padding: 130px 0 50px;
-				max-width: 1300px;
-				margin: 0 auto;
-				display: flex;
-			}
-			.post-resume {
-				width: 33%;
-			}
-		</style>
 	</body>
 </html>

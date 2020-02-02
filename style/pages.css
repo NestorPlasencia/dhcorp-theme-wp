@@ -592,6 +592,94 @@ section#quienes-somos .container .content-right .clients img {
           filter: grayscale(1);
 }
 
+section#post-list {
+  background-color: #f3f3f3;
+}
+
+section#post-list .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 130px 20px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  section#post-list .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section#post-list .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 600px;
+    padding: 100px 20px 50px;
+  }
+}
+
+section#post-list .container article {
+  background-color: #ffffff;
+}
+
+section#post-list .container article a {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+section#post-list .container article a img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#post-list .container article a .content {
+  padding: 15px;
+}
+
+section#post-list .container article a .content h2 {
+  color: #301e79;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+section#post-list .container article a .content p {
+  color: #1b2632;
+  font-size: 15px;
+}
+
+section#post-list .container article a .content time {
+  color: #a6a6a6;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+section#post-list .container article a .content .center {
+  text-align: center;
+}
+
+section#post-list .container article a .content .center .button {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 25px 8px;
+  color: #ffffff;
+  border: 2px solid #301e79;
+  background-color: #301e79;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 0;
+}
+
 section#servicios {
   padding: 150px 0 100px;
   background-image: url(../assets/images/background/bg-servicios.png);
