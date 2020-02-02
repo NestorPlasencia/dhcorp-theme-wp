@@ -523,7 +523,7 @@ section#quienes-somos .container {
   -ms-grid-columns: 340px 1fr;
       grid-template-columns: 340px 1fr;
   grid-gap: 30px;
-  padding: 130px 0 50px;
+  padding: 130px 20px 50px;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -681,7 +681,7 @@ section#post-list .container article a .content .center .button {
 }
 
 section#servicios {
-  padding: 150px 0 100px;
+  padding: 150px 20px 100px;
   background-image: url(../assets/images/background/bg-servicios.png);
   background-repeat: no-repeat;
   background-size: cover;
