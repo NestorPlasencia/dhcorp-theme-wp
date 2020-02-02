@@ -104,10 +104,16 @@ section#servicios {
 	background-image: url(../assets/images/background/bg-servicios.png);
 	
 	@media screen and (max-width: 800px) {
-		margin: 0 auto 50px;
-		padding-top: 130px;
+		margin: 0 auto;
+		padding-top: 100px;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	@media screen and (min-width: 768px) {
+		.servicios-container-mobile {
+			display: none;
+		}
 	}
 
 	.servicios-upper {
@@ -119,18 +125,42 @@ section#servicios {
 			font-weight: 900;
 			font-size: 2.3em;
 			letter-spacing: -0.01em;
+
+			@media screen and (max-width: 800px) {
+				font-size: 30px;
+				margin-bottom: 15px;
+			}
 		}
 
 		p {
 			margin: 0;
 			font-size: 1.3em;
 			font-weight: 300;
+
+			@media screen and (max-width: 800px) {
+				font-size: 18px;
+			}
 		}
 	}
 
 	.servicios-container {
 		max-width: 1250px;
 		margin: 0 auto;
+
+		@media screen and (max-width: 800px) {
+			display: none;
+		}
+	}
+
+	.servicios-container-mobile {
+		.card-mobile {
+			background-color: $white;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
 	}
 
 	.carousel-3d-container {

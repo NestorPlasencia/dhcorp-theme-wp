@@ -59,7 +59,33 @@
 						<?php endwhile; wp_reset_query(); ?>	
 					</carousel-3d>
 				</div>	
-			</div>		  
+			</div>
+
+			<div class="servicios-container-mobile">
+				<?php
+					$loop = new WP_Query( array(
+							'post_type' => 'servicios_ofertados',
+							'posts_per_page' => -1,
+							'orderby' => 'index',
+							'order'   => 'ASC',
+						)
+					);
+				?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<div class="mobile-card">
+						<?php the_post_thumbnail('full'); ?>
+						<figcaption>
+							<div class="description">
+								<h2><?php the_title(); ?></h2>
+								<p><?php echo get_field('resume'); ?></p>
+							</div>
+							<div class="button">
+								<button onclick="showModal('<?php echo get_field('index'); ?>')">VER MÁS</button>
+							</div>
+						</figcaption>
+					</div>
+				<?php endwhile; wp_reset_query(); ?>
+			</div>	  
 		</section>
 	
 		
