@@ -42,7 +42,7 @@
 
 							<slide :index="<?php echo get_field('index'); ?>">
 								<figure>
-									<?php the_post_thumbnail('full'); ?>
+									<?php the_post_thumbnail('large'); ?>
 									<figcaption>
 										<div class="description">
 											<h2><?php the_title(); ?></h2>
@@ -68,7 +68,7 @@
 			<div class="modal-content modal-content-<?php echo get_field('index'); ?>">
 				<span class="close" onclick="hideModal()">&times;</span>
 				<header class="service-hero">
-					<?php $url = wp_get_attachment_url( get_post_thumbnail_id(), 'full');?>
+					<?php $url = wp_get_attachment_url( get_post_thumbnail_id(), 'large');?>
 					<img class="hero" src="<?php echo $url;?>" alt="<?php the_title(); ?>">
 				</header>
 				<div class="service-content">
