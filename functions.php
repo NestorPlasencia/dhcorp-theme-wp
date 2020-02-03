@@ -6,7 +6,7 @@ function dhcorp_style_script( )
     wp_enqueue_style( 'slider',get_template_directory_uri().'/style/slider.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'animation',get_template_directory_uri().'/style/animation.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'swiper','https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css', '1.0.1', 'all' );
-    wp_enqueue_style( 'pages',get_template_directory_uri().'/style/pages.css', array(), '1.0.6', 'all' );
+    wp_enqueue_style( 'pages',get_template_directory_uri().'/style/pages.css', array(), '1.0.7', 'all' );
 
 }
 
