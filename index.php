@@ -49,7 +49,7 @@
 
 		<div class="animation-container">
 			<div class="thinkings">
-				<a href="servicios.html#footer" class="thinking explicit hide-desktop">Llámame</a>
+				<a href="tel:+51997332667" class="thinking explicit hide-desktop">Llámame</a>
 				<a href="servicios.html#footer" class="thinking explicit">Agenda una reunión</a>
 				<a href="servicios.html" class="thinking explicit">Conócenos</a>
 			</div>
